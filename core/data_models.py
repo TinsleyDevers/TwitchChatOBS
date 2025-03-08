@@ -27,5 +27,6 @@ class ComboItem:
     is_emote: bool
     emote_id: Optional[str] = None
     emote_url: Optional[str] = None
+    local_emote_path: Optional[str] = None  # Added field for local emote path
     expires: float = 0
     contributors: Set[str] = field(default_factory=set)

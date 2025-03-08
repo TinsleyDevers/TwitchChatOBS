@@ -882,3 +882,510 @@
 2025-03-08 08:18:21,436 - TwitchTracker - INFO - Twitch Tracker stopped
 2025-03-08 08:18:21,587 - TwitchTracker - INFO - Connected to Twitch channel #subroza
 2025-03-08 08:18:22,616 - TwitchTracker - INFO - GUI closed
+2025-03-08 08:32:14,559 - TwitchTracker - INFO - Logging initialized to C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\twitch_tracker.log
+2025-03-08 08:32:14,560 - TwitchTracker - INFO - Starting TwitchTracker
+2025-03-08 08:32:14,561 - TwitchTracker.LocalServer - INFO - Starting server from directory: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS
+2025-03-08 08:32:14,561 - TwitchTracker.LocalServer - INFO - Static files located in: static
+2025-03-08 08:32:14,563 - TwitchTracker.LocalServer - INFO - Started local server at http://localhost:8000
+2025-03-08 08:32:14,563 - TwitchTracker - INFO - Started local server at http://localhost:8000/static
+2025-03-08 08:32:14,803 - TwitchTracker.AudioManager - INFO - Pygame audio initialized
+2025-03-08 08:32:15,001 - TwitchTracker.AudioManager - INFO - TTS engine initialized
+2025-03-08 08:32:15,001 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 08:32:15,005 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:32:15,006 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:32:15,007 - TwitchTracker.HTMLGenerator - INFO - Created HTML overlay at C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:32:15,007 - TwitchTracker - INFO - HTML overlay created at: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:32:15,008 - TwitchTracker - INFO - Initializing GUI
+2025-03-08 08:32:54,093 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 08:32:54,101 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 08:32:54,103 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 08:32:54,238 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:32:54,321 - TwitchTracker.BTTVProvider - INFO - Loaded 65 BTTV emotes
+2025-03-08 08:32:54,748 - TwitchTracker.FFZProvider - INFO - Loaded 48 FFZ emotes
+2025-03-08 08:32:54,993 - TwitchTracker.SevenTVProvider - ERROR - Error fetching 7TV emotes: 410 Client Error: Gone for url: https://api.7tv.app/v2/emotes/global
+2025-03-08 08:32:54,995 - TwitchTracker - INFO - Emotes list saved
+2025-03-08 08:32:54,995 - TwitchTracker - INFO - Loaded 113 emotes from all providers
+2025-03-08 08:33:02,048 - TwitchTracker - ERROR - Error in chat listener: ComboItem.__init__() got an unexpected keyword argument 'local_emote_path'
+2025-03-08 08:33:02,143 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:33:07,199 - TwitchTracker - ERROR - Error in chat listener: ComboItem.__init__() got an unexpected keyword argument 'local_emote_path'
+2025-03-08 08:33:07,330 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:33:13,826 - TwitchTracker - ERROR - Error in chat listener: ComboItem.__init__() got an unexpected keyword argument 'local_emote_path'
+2025-03-08 08:33:13,917 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:33:17,317 - TwitchTracker - ERROR - Error in chat listener: ComboItem.__init__() got an unexpected keyword argument 'local_emote_path'
+2025-03-08 08:33:17,417 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:33:18,050 - TwitchTracker - ERROR - Error in chat listener: ComboItem.__init__() got an unexpected keyword argument 'local_emote_path'
+2025-03-08 08:33:18,149 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:33:18,494 - TwitchTracker - ERROR - Error in chat listener: ComboItem.__init__() got an unexpected keyword argument 'local_emote_path'
+2025-03-08 08:33:18,591 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:33:18,934 - TwitchTracker - ERROR - Error in chat listener: ComboItem.__init__() got an unexpected keyword argument 'local_emote_path'
+2025-03-08 08:33:18,982 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 08:33:18,983 - TwitchTracker - ERROR - Failed to connect to Twitch: [WinError 10038] An operation was attempted on something that is not a socket
+2025-03-08 08:33:18,983 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 08:33:18,983 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 08:34:54,743 - TwitchTracker - INFO - GUI closed
+2025-03-08 08:34:57,798 - TwitchTracker - INFO - Logging initialized to C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\twitch_tracker.log
+2025-03-08 08:34:57,799 - TwitchTracker - INFO - Starting TwitchTracker
+2025-03-08 08:34:57,799 - TwitchTracker.LocalServer - INFO - Starting server from directory: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS
+2025-03-08 08:34:57,800 - TwitchTracker.LocalServer - INFO - Static files located in: static
+2025-03-08 08:34:57,801 - TwitchTracker.LocalServer - INFO - Started local server at http://localhost:8000
+2025-03-08 08:34:57,801 - TwitchTracker - INFO - Started local server at http://localhost:8000/static
+2025-03-08 08:34:58,004 - TwitchTracker.AudioManager - INFO - Pygame audio initialized
+2025-03-08 08:34:58,192 - TwitchTracker.AudioManager - INFO - TTS engine initialized
+2025-03-08 08:34:58,192 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 08:34:58,196 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:34:58,196 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:34:58,197 - TwitchTracker.HTMLGenerator - INFO - Created HTML overlay at C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:34:58,197 - TwitchTracker - INFO - HTML overlay created at: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:34:58,198 - TwitchTracker - INFO - Initializing GUI
+2025-03-08 08:34:59,699 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 08:34:59,705 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 08:34:59,707 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 08:34:59,848 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:34:59,876 - TwitchTracker.BTTVProvider - INFO - Loaded 65 BTTV emotes
+2025-03-08 08:35:00,204 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:35:00,205 - TwitchTracker - INFO - Speaking text: 'brutherrrr', TTS enabled: True
+2025-03-08 08:35:00,206 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'brutherrrr'
+2025-03-08 08:35:00,206 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:35:00,261 - TwitchTracker.FFZProvider - INFO - Loaded 48 FFZ emotes
+2025-03-08 08:35:00,458 - TwitchTracker.SevenTVProvider - ERROR - Error fetching 7TV emotes: 410 Client Error: Gone for url: https://api.7tv.app/v2/emotes/global
+2025-03-08 08:35:00,460 - TwitchTracker - INFO - Emotes list saved
+2025-03-08 08:35:00,460 - TwitchTracker - INFO - Loaded 113 emotes from all providers
+2025-03-08 08:35:01,387 - TwitchTracker - INFO - Speaking text: 'LOL', TTS enabled: True
+2025-03-08 08:35:01,389 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'LOL'
+2025-03-08 08:35:01,389 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:35:01,389 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:35:01,902 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:35:02,054 - TwitchTracker - INFO - Speaking text: 'gg', TTS enabled: True
+2025-03-08 08:35:02,055 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'gg'
+2025-03-08 08:35:02,055 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:35:02,913 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 5] Access is denied: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:35:02,914 - TwitchTracker - INFO - Speaking text: 'amen', TTS enabled: True
+2025-03-08 08:35:02,915 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'amen'
+2025-03-08 08:35:02,915 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:35:02,915 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:35:03,522 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:35:05,994 - TwitchTracker - INFO - Speaking text: 'it', TTS enabled: True
+2025-03-08 08:35:05,996 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'it'
+2025-03-08 08:35:05,996 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:35:06,000 - TwitchTracker - INFO - Speaking text: 'was', TTS enabled: True
+2025-03-08 08:35:06,002 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'was'
+2025-03-08 08:35:06,002 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:35:06,002 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:35:07,213 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:35:10,907 - TwitchTracker - INFO - Speaking text: '!tracker', TTS enabled: True
+2025-03-08 08:35:10,908 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '!tracker'
+2025-03-08 08:35:10,908 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:35:11,073 - TwitchTracker - INFO - Speaking text: 'https://tracker.gg/valorant/profile/riot/Subroza%23RULT/overview', TTS enabled: True
+2025-03-08 08:35:11,074 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'https://tracker.gg/valorant/profile/riot/Subroza%23RULT/overview'
+2025-03-08 08:35:11,074 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:35:11,074 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:35:12,374 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:35:18,102 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:35:18,102 - TwitchTracker - INFO - Speaking text: 'was', TTS enabled: True
+2025-03-08 08:35:18,104 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'was'
+2025-03-08 08:35:18,104 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:35:19,476 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:35:28,157 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 08:35:28,158 - TwitchTracker - ERROR - Error in chat listener: [WinError 10038] An operation was attempted on something that is not a socket
+2025-03-08 08:35:28,159 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 08:35:28,159 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 08:35:28,343 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:35:29,191 - TwitchTracker - INFO - GUI closed
+2025-03-08 08:37:53,075 - TwitchTracker - INFO - Logging initialized to C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\twitch_tracker.log
+2025-03-08 08:37:53,076 - TwitchTracker - INFO - Starting TwitchTracker
+2025-03-08 08:37:53,077 - TwitchTracker.LocalServer - INFO - Starting server from directory: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS
+2025-03-08 08:37:53,077 - TwitchTracker.LocalServer - INFO - Static files located in: static
+2025-03-08 08:37:53,079 - TwitchTracker.LocalServer - INFO - Started local server at http://localhost:8000
+2025-03-08 08:37:53,079 - TwitchTracker - INFO - Started local server at http://localhost:8000/static
+2025-03-08 08:37:53,272 - TwitchTracker.AudioManager - INFO - Pygame audio initialized
+2025-03-08 08:37:53,467 - TwitchTracker.AudioManager - INFO - TTS engine initialized
+2025-03-08 08:37:53,468 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 08:37:53,471 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:37:53,471 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:37:53,472 - TwitchTracker.HTMLGenerator - INFO - Created HTML overlay at C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:37:53,473 - TwitchTracker - INFO - HTML overlay created at: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:37:53,473 - TwitchTracker - INFO - Initializing GUI
+2025-03-08 08:37:57,562 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 08:37:57,570 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 08:37:57,571 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 08:37:57,701 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:37:57,766 - TwitchTracker.BTTVProvider - INFO - Loaded 65 BTTV emotes
+2025-03-08 08:37:58,288 - TwitchTracker.FFZProvider - INFO - Loaded 48 FFZ emotes
+2025-03-08 08:37:58,597 - TwitchTracker.SevenTVProvider - ERROR - Error fetching 7TV emotes: 410 Client Error: Gone for url: https://api.7tv.app/v2/emotes/global
+2025-03-08 08:37:58,599 - TwitchTracker - INFO - Emotes list saved
+2025-03-08 08:37:58,599 - TwitchTracker - INFO - Loaded 113 emotes from all providers
+2025-03-08 08:38:02,736 - TwitchTracker - INFO - Speaking text: 'yoo', TTS enabled: True
+2025-03-08 08:38:02,737 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'yoo'
+2025-03-08 08:38:02,737 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:38:04,078 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:38:14,085 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:38:14,085 - TwitchTracker - INFO - Speaking text: 'loooooooooool', TTS enabled: True
+2025-03-08 08:38:14,086 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'loooooooooool'
+2025-03-08 08:38:14,086 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:38:15,910 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:38:19,198 - TwitchTracker - INFO - Speaking text: 'Ya', TTS enabled: True
+2025-03-08 08:38:19,199 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'Ya'
+2025-03-08 08:38:19,199 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:38:20,515 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:38:24,827 - TwitchTracker.SettingsTab - INFO - Starting to save settings
+2025-03-08 08:38:24,829 - TwitchTracker - INFO - Configuration saved
+2025-03-08 08:38:24,830 - TwitchTracker.SettingsTab - INFO - Adding min_combo_count attribute to tracker
+2025-03-08 08:38:24,830 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 08:38:24,832 - TwitchTracker.SettingsTab - INFO - Settings saved successfully
+2025-03-08 08:38:33,403 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 08:38:33,404 - TwitchTracker - ERROR - Error in chat listener: [WinError 10038] An operation was attempted on something that is not a socket
+2025-03-08 08:38:33,404 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 08:38:33,405 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 08:38:33,493 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:38:34,492 - TwitchTracker - INFO - GUI closed
+2025-03-08 08:38:37,469 - TwitchTracker - INFO - Logging initialized to C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\twitch_tracker.log
+2025-03-08 08:38:37,470 - TwitchTracker - INFO - Starting TwitchTracker
+2025-03-08 08:38:37,470 - TwitchTracker.LocalServer - INFO - Starting server from directory: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS
+2025-03-08 08:38:37,471 - TwitchTracker.LocalServer - INFO - Static files located in: static
+2025-03-08 08:38:37,472 - TwitchTracker.LocalServer - INFO - Started local server at http://localhost:8000
+2025-03-08 08:38:37,472 - TwitchTracker - INFO - Started local server at http://localhost:8000/static
+2025-03-08 08:38:37,672 - TwitchTracker.AudioManager - INFO - Pygame audio initialized
+2025-03-08 08:38:37,867 - TwitchTracker.AudioManager - INFO - TTS engine initialized
+2025-03-08 08:38:37,868 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 08:38:37,871 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:38:37,872 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:38:37,872 - TwitchTracker.HTMLGenerator - INFO - Created HTML overlay at C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:38:37,873 - TwitchTracker - INFO - HTML overlay created at: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:38:37,873 - TwitchTracker - INFO - Initializing GUI
+2025-03-08 08:38:40,473 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 08:38:40,478 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 08:38:40,480 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 08:38:40,571 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:38:40,659 - TwitchTracker.BTTVProvider - INFO - Loaded 65 BTTV emotes
+2025-03-08 08:38:41,067 - TwitchTracker.FFZProvider - INFO - Loaded 48 FFZ emotes
+2025-03-08 08:38:41,262 - TwitchTracker.SevenTVProvider - ERROR - Error fetching 7TV emotes: 410 Client Error: Gone for url: https://api.7tv.app/v2/emotes/global
+2025-03-08 08:38:41,264 - TwitchTracker - INFO - Emotes list saved
+2025-03-08 08:38:41,265 - TwitchTracker - INFO - Loaded 113 emotes from all providers
+2025-03-08 08:38:43,475 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 5] Access is denied: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:38:43,475 - TwitchTracker - INFO - Speaking text: 'okay', TTS enabled: True
+2025-03-08 08:38:43,477 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'okay'
+2025-03-08 08:38:43,477 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:38:43,480 - TwitchTracker - INFO - Speaking text: 'okay 2', TTS enabled: True
+2025-03-08 08:38:43,482 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'okay 2'
+2025-03-08 08:38:43,482 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:38:43,482 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:38:44,866 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:39:00,657 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:39:00,658 - TwitchTracker - INFO - Speaking text: '@babywicho', TTS enabled: True
+2025-03-08 08:39:00,659 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '@babywicho'
+2025-03-08 08:39:00,659 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:39:00,662 - TwitchTracker - INFO - Speaking text: 'deadass', TTS enabled: True
+2025-03-08 08:39:00,664 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'deadass'
+2025-03-08 08:39:00,664 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:39:00,665 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:39:02,536 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:39:04,329 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:39:04,333 - TwitchTracker - INFO - Speaking text: 'No', TTS enabled: True
+2025-03-08 08:39:04,334 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'No'
+2025-03-08 08:39:04,334 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:39:04,337 - TwitchTracker - INFO - Speaking text: 'pop', TTS enabled: True
+2025-03-08 08:39:04,339 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'pop'
+2025-03-08 08:39:04,339 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:39:04,339 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:39:05,553 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:39:07,832 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 5] Access is denied: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:39:07,833 - TwitchTracker - INFO - Speaking text: '@babywicho 2', TTS enabled: True
+2025-03-08 08:39:07,834 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '@babywicho 2'
+2025-03-08 08:39:07,834 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:39:07,837 - TwitchTracker - INFO - Speaking text: 'True', TTS enabled: True
+2025-03-08 08:39:07,838 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'True'
+2025-03-08 08:39:07,839 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:39:07,839 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:39:09,906 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:39:20,126 - TwitchTracker - INFO - Speaking text: 'wait', TTS enabled: True
+2025-03-08 08:39:20,127 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'wait'
+2025-03-08 08:39:20,127 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:39:21,394 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:39:24,620 - TwitchTracker - INFO - Speaking text: 'move', TTS enabled: True
+2025-03-08 08:39:24,621 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'move'
+2025-03-08 08:39:24,621 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:39:24,625 - TwitchTracker - INFO - Speaking text: 'on', TTS enabled: True
+2025-03-08 08:39:24,625 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'on'
+2025-03-08 08:39:24,626 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:39:24,626 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:39:25,994 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:39:44,188 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json.tmp' -> 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:39:44,192 - TwitchTracker - INFO - Speaking text: 'you', TTS enabled: True
+2025-03-08 08:39:44,199 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'you'
+2025-03-08 08:39:44,200 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:39:44,203 - TwitchTracker - INFO - Speaking text: 'are', TTS enabled: True
+2025-03-08 08:39:44,209 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'are'
+2025-03-08 08:39:44,209 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:39:44,210 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:39:45,471 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:39:52,338 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:39:52,338 - TwitchTracker - INFO - Speaking text: '@Dasnerth', TTS enabled: True
+2025-03-08 08:39:52,339 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '@Dasnerth'
+2025-03-08 08:39:52,340 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:39:52,343 - TwitchTracker - INFO - Speaking text: 'Nerdge', TTS enabled: True
+2025-03-08 08:39:52,344 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'Nerdge'
+2025-03-08 08:39:52,344 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:39:52,344 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:39:54,110 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:39:55,720 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:39:55,721 - TwitchTracker - INFO - Speaking text: '@dasnerth', TTS enabled: True
+2025-03-08 08:39:55,722 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '@dasnerth'
+2025-03-08 08:39:55,722 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:39:55,725 - TwitchTracker - INFO - Speaking text: 'Shoo', TTS enabled: True
+2025-03-08 08:39:55,727 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'Shoo'
+2025-03-08 08:39:55,728 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:39:55,728 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:39:57,453 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:40:21,925 - TwitchTracker.SettingsTab - INFO - Starting to save settings
+2025-03-08 08:40:21,927 - TwitchTracker - INFO - Configuration saved
+2025-03-08 08:40:21,927 - TwitchTracker.SettingsTab - INFO - Adding min_combo_count attribute to tracker
+2025-03-08 08:40:21,927 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 08:40:21,929 - TwitchTracker.SettingsTab - INFO - Settings saved successfully
+2025-03-08 08:40:26,554 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json.tmp' -> 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:40:26,555 - TwitchTracker - INFO - Speaking text: 'Time', TTS enabled: True
+2025-03-08 08:40:26,556 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'Time'
+2025-03-08 08:40:26,556 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:40:27,972 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:40:34,834 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 5] Access is denied: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:40:34,835 - TwitchTracker - INFO - Speaking text: 'yo', TTS enabled: True
+2025-03-08 08:40:34,836 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'yo'
+2025-03-08 08:40:34,836 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:40:36,151 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:40:48,042 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 08:40:48,043 - TwitchTracker - ERROR - Error in chat listener: [WinError 10038] An operation was attempted on something that is not a socket
+2025-03-08 08:40:48,044 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 08:40:48,045 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 08:40:48,198 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:41:44,475 - TwitchTracker - INFO - GUI closed
+2025-03-08 08:41:48,145 - TwitchTracker - INFO - Logging initialized to C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\twitch_tracker.log
+2025-03-08 08:41:48,146 - TwitchTracker - INFO - Starting TwitchTracker
+2025-03-08 08:41:48,146 - TwitchTracker.LocalServer - INFO - Starting server from directory: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS
+2025-03-08 08:41:48,147 - TwitchTracker.LocalServer - INFO - Static files located in: static
+2025-03-08 08:41:48,149 - TwitchTracker.LocalServer - INFO - Started local server at http://localhost:8000
+2025-03-08 08:41:48,149 - TwitchTracker - INFO - Started local server at http://localhost:8000/static
+2025-03-08 08:41:48,343 - TwitchTracker.AudioManager - INFO - Pygame audio initialized
+2025-03-08 08:41:48,603 - TwitchTracker.AudioManager - INFO - TTS engine initialized
+2025-03-08 08:41:48,604 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 08:41:48,607 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:41:48,607 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:41:48,608 - TwitchTracker.HTMLGenerator - INFO - Created HTML overlay at C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:41:48,609 - TwitchTracker - INFO - HTML overlay created at: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:41:48,609 - TwitchTracker - INFO - Initializing GUI
+2025-03-08 08:42:02,166 - TwitchTracker.SettingsTab - INFO - Starting to save settings
+2025-03-08 08:42:02,168 - TwitchTracker - INFO - Configuration saved
+2025-03-08 08:42:02,168 - TwitchTracker.SettingsTab - INFO - Adding min_combo_count attribute to tracker
+2025-03-08 08:42:02,168 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 08:42:02,170 - TwitchTracker.SettingsTab - INFO - Settings saved successfully
+2025-03-08 08:42:06,318 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 08:42:06,326 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 08:42:06,328 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 08:42:06,458 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:42:06,520 - TwitchTracker.BTTVProvider - INFO - Loaded 65 BTTV emotes
+2025-03-08 08:42:06,921 - TwitchTracker.FFZProvider - INFO - Loaded 48 FFZ emotes
+2025-03-08 08:42:07,119 - TwitchTracker.SevenTVProvider - ERROR - Error fetching 7TV emotes: 410 Client Error: Gone for url: https://api.7tv.app/v2/emotes/global
+2025-03-08 08:42:07,121 - TwitchTracker - INFO - Emotes list saved
+2025-03-08 08:42:07,121 - TwitchTracker - INFO - Loaded 113 emotes from all providers
+2025-03-08 08:42:11,940 - TwitchTracker - INFO - Speaking text: 'true', TTS enabled: True
+2025-03-08 08:42:11,942 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'true'
+2025-03-08 08:42:11,942 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:42:11,946 - TwitchTracker - INFO - Emote configurations saved
+2025-03-08 08:42:13,273 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:42:23,458 - TwitchTracker.SettingsTab - INFO - Starting to save settings
+2025-03-08 08:42:23,459 - TwitchTracker - INFO - Configuration saved
+2025-03-08 08:42:23,459 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 08:42:23,461 - TwitchTracker.SettingsTab - INFO - Settings saved successfully
+2025-03-08 08:42:24,692 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:42:24,693 - TwitchTracker - INFO - Speaking text: '!record', TTS enabled: True
+2025-03-08 08:42:24,694 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '!record'
+2025-03-08 08:42:24,694 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:42:26,110 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:42:32,342 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:42:32,343 - TwitchTracker - INFO - Speaking text: '!watchtime', TTS enabled: True
+2025-03-08 08:42:32,344 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '!watchtime'
+2025-03-08 08:42:32,344 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:42:34,009 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:42:34,731 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 08:42:34,731 - TwitchTracker - ERROR - Error in chat listener: [WinError 10038] An operation was attempted on something that is not a socket
+2025-03-08 08:42:34,732 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 08:42:34,733 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 08:42:34,825 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 08:42:35,387 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 08:42:35,390 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 08:42:35,392 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 08:42:35,486 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 08:42:41,501 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:42:41,501 - TwitchTracker - INFO - Speaking text: 'hello', TTS enabled: True
+2025-03-08 08:42:41,502 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'hello'
+2025-03-08 08:42:41,502 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:42:42,869 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:42:45,058 - TwitchTracker - INFO - Speaking text: 'test test', TTS enabled: True
+2025-03-08 08:42:45,058 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'test test'
+2025-03-08 08:42:45,059 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:42:46,775 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:42:47,694 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:42:47,695 - TwitchTracker - INFO - Speaking text: 'helo helo', TTS enabled: True
+2025-03-08 08:42:47,696 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'helo helo'
+2025-03-08 08:42:47,696 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:42:48,894 - TwitchTracker - INFO - Speaking text: 'helo', TTS enabled: True
+2025-03-08 08:42:48,895 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'helo'
+2025-03-08 08:42:48,895 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:42:48,896 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:42:49,427 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:42:50,541 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 5] Access is denied: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:42:50,543 - TwitchTracker - INFO - Speaking text: 'helo 2', TTS enabled: True
+2025-03-08 08:42:50,543 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'helo 2'
+2025-03-08 08:42:50,543 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:42:52,132 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:42:52,633 - TwitchTracker - INFO - Speaking text: 'hello', TTS enabled: True
+2025-03-08 08:42:52,633 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'hello'
+2025-03-08 08:42:52,634 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:42:53,997 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:42:54,993 - TwitchTracker - INFO - Speaking text: 'hello 2', TTS enabled: True
+2025-03-08 08:42:54,995 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'hello 2'
+2025-03-08 08:42:54,995 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:42:55,470 - TwitchTracker - INFO - Speaking text: 'test', TTS enabled: True
+2025-03-08 08:42:55,471 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'test'
+2025-03-08 08:42:55,471 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:42:55,471 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:42:55,909 - TwitchTracker - INFO - Speaking text: 'test 2', TTS enabled: True
+2025-03-08 08:42:55,910 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'test 2'
+2025-03-08 08:42:55,910 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:42:55,911 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:42:56,560 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:42:58,173 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 5] Access is denied: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:42:58,173 - TwitchTracker - INFO - Speaking text: 'test test', TTS enabled: True
+2025-03-08 08:42:58,175 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'test test'
+2025-03-08 08:42:58,175 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:42:59,173 - TwitchTracker - INFO - Speaking text: 'test test 2', TTS enabled: True
+2025-03-08 08:42:59,175 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'test test 2'
+2025-03-08 08:42:59,175 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:42:59,175 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:42:59,892 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:43:04,901 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 5] Access is denied: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:44:15,751 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 5] Access is denied: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:44:15,752 - TwitchTracker - INFO - Speaking text: 'WutFace', TTS enabled: True
+2025-03-08 08:44:15,752 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'WutFace'
+2025-03-08 08:44:15,753 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:44:17,423 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:47:10,391 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 08:47:10,392 - TwitchTracker - ERROR - Error in chat listener: [WinError 10038] An operation was attempted on something that is not a socket
+2025-03-08 08:47:10,393 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 08:47:10,393 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 08:47:10,520 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 08:47:11,550 - TwitchTracker - INFO - GUI closed
+2025-03-08 08:47:14,902 - TwitchTracker - INFO - Logging initialized to C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\twitch_tracker.log
+2025-03-08 08:47:14,903 - TwitchTracker - INFO - Starting TwitchTracker
+2025-03-08 08:47:14,904 - TwitchTracker.LocalServer - INFO - Starting server from directory: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS
+2025-03-08 08:47:14,904 - TwitchTracker.LocalServer - INFO - Static files located in: static
+2025-03-08 08:47:14,906 - TwitchTracker.LocalServer - INFO - Started local server at http://localhost:8000
+2025-03-08 08:47:14,906 - TwitchTracker - INFO - Started local server at http://localhost:8000/static
+2025-03-08 08:47:15,090 - TwitchTracker.AudioManager - INFO - Pygame audio initialized
+2025-03-08 08:47:15,274 - TwitchTracker.AudioManager - INFO - TTS engine initialized
+2025-03-08 08:47:15,274 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 08:47:15,279 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:47:15,279 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:47:15,280 - TwitchTracker.HTMLGenerator - INFO - Created HTML overlay at C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:47:15,281 - TwitchTracker - INFO - HTML overlay created at: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:47:15,282 - TwitchTracker - INFO - Initializing GUI
+2025-03-08 08:47:16,904 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 08:47:16,911 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 08:47:16,912 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 08:47:17,008 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 08:47:17,132 - TwitchTracker.BTTVProvider - INFO - Loaded 65 BTTV emotes
+2025-03-08 08:47:17,574 - TwitchTracker.FFZProvider - INFO - Loaded 47 FFZ emotes
+2025-03-08 08:47:17,814 - TwitchTracker.SevenTVProvider - ERROR - Error fetching 7TV emotes: 410 Client Error: Gone for url: https://api.7tv.app/v2/emotes/global
+2025-03-08 08:47:17,816 - TwitchTracker - INFO - Emotes list saved
+2025-03-08 08:47:17,816 - TwitchTracker - INFO - Loaded 110 emotes from all providers
+2025-03-08 08:47:26,437 - TwitchTracker - INFO - Emote configurations saved
+2025-03-08 08:47:32,103 - TwitchTracker - INFO - Speaking text: 'test', TTS enabled: True
+2025-03-08 08:47:32,104 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'test'
+2025-03-08 08:47:32,104 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:47:33,612 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:47:42,221 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 5] Access is denied: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:47:42,222 - TwitchTracker - INFO - Speaking text: 'WutFace', TTS enabled: True
+2025-03-08 08:47:42,224 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'WutFace'
+2025-03-08 08:47:42,225 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:47:43,845 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:48:11,753 - TwitchTracker - INFO - Emote configurations saved
+2025-03-08 08:48:16,317 - TwitchTracker - INFO - Emote configurations saved
+2025-03-08 08:48:22,939 - TwitchTracker - INFO - Speaking text: 'asd', TTS enabled: True
+2025-03-08 08:48:22,941 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'asd'
+2025-03-08 08:48:22,941 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:48:23,865 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:48:23,865 - TwitchTracker - INFO - Speaking text: 'asd 2', TTS enabled: True
+2025-03-08 08:48:23,866 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'asd 2'
+2025-03-08 08:48:23,866 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:48:23,866 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:48:24,508 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:48:24,510 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:48:24,510 - TwitchTracker - INFO - Speaking text: 'as', TTS enabled: True
+2025-03-08 08:48:24,511 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'as'
+2025-03-08 08:48:24,511 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:48:25,825 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:48:26,098 - TwitchTracker - INFO - Speaking text: 'ags', TTS enabled: True
+2025-03-08 08:48:26,100 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'ags'
+2025-03-08 08:48:26,100 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:48:27,771 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:48:36,363 - TwitchTracker - INFO - Emote configurations saved
+2025-03-08 08:48:43,213 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:48:52,934 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:49:06,030 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:49:06,031 - TwitchTracker - INFO - Speaking text: 'duDudu', TTS enabled: True
+2025-03-08 08:49:06,032 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'duDudu'
+2025-03-08 08:49:06,035 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:49:06,036 - TwitchTracker - INFO - Emote configurations saved
+2025-03-08 08:49:07,557 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:49:45,940 - TwitchTracker - INFO - Emote configurations saved
+2025-03-08 08:51:11,384 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 08:51:11,385 - TwitchTracker - ERROR - Error in chat listener: [WinError 10038] An operation was attempted on something that is not a socket
+2025-03-08 08:51:11,386 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 08:51:11,386 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 08:51:11,519 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 08:51:12,398 - TwitchTracker - INFO - GUI closed
+2025-03-08 08:59:40,148 - TwitchTracker - INFO - Logging initialized to C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\twitch_tracker.log
+2025-03-08 08:59:40,149 - TwitchTracker - INFO - Starting TwitchTracker
+2025-03-08 08:59:40,150 - TwitchTracker.LocalServer - INFO - Starting server from directory: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS
+2025-03-08 08:59:40,151 - TwitchTracker.LocalServer - INFO - Static files located in: static
+2025-03-08 08:59:40,152 - TwitchTracker.LocalServer - INFO - Started local server at http://localhost:8000
+2025-03-08 08:59:40,153 - TwitchTracker - INFO - Started local server at http://localhost:8000/static
+2025-03-08 08:59:40,349 - TwitchTracker.AudioManager - INFO - Pygame audio initialized
+2025-03-08 08:59:40,527 - TwitchTracker.AudioManager - INFO - TTS engine initialized
+2025-03-08 08:59:40,528 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 08:59:40,531 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:59:40,531 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:59:40,532 - TwitchTracker.HTMLGenerator - INFO - Created HTML overlay at C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:59:40,533 - TwitchTracker - INFO - HTML overlay created at: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:59:40,533 - TwitchTracker - INFO - Initializing GUI
+2025-03-08 08:59:42,418 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 08:59:42,425 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 08:59:42,426 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 08:59:42,549 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 08:59:42,648 - TwitchTracker.BTTVProvider - INFO - Loaded 65 BTTV emotes
+2025-03-08 08:59:43,063 - TwitchTracker.FFZProvider - INFO - Loaded 47 FFZ emotes
+2025-03-08 08:59:43,340 - TwitchTracker.SevenTVProvider - ERROR - Error fetching 7TV emotes: 410 Client Error: Gone for url: https://api.7tv.app/v2/emotes/global
+2025-03-08 08:59:43,343 - TwitchTracker - INFO - Emotes list saved
+2025-03-08 08:59:43,343 - TwitchTracker - INFO - Loaded 110 emotes from all providers
+2025-03-08 08:59:47,627 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:59:47,628 - TwitchTracker - INFO - Speaking text: 'tes', TTS enabled: True
+2025-03-08 08:59:47,629 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'tes'
+2025-03-08 08:59:47,629 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:59:49,008 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:59:50,098 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 09:00:05,403 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 09:00:05,404 - TwitchTracker - INFO - Speaking text: 'test', TTS enabled: True
+2025-03-08 09:00:05,405 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'test'
+2025-03-08 09:00:05,405 - TwitchTracker - INFO - TTS result: True
+2025-03-08 09:00:06,821 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 09:00:26,925 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 09:00:42,212 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 5] Access is denied: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 09:00:42,212 - TwitchTracker - INFO - Speaking text: 'test', TTS enabled: True
+2025-03-08 09:00:42,213 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'test'
+2025-03-08 09:00:42,213 - TwitchTracker - INFO - TTS result: True
+2025-03-08 09:00:43,628 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 09:00:44,293 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 2] The system cannot find the file specified: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 09:01:38,324 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 09:01:38,325 - TwitchTracker - ERROR - Error in chat listener: [WinError 10038] An operation was attempted on something that is not a socket
+2025-03-08 09:01:38,326 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 09:01:38,327 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 09:01:38,436 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 09:01:39,407 - TwitchTracker - INFO - GUI closed

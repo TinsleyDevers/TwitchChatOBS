@@ -269,6 +269,20 @@ def get_html_overlay_content(server_url: str = None) -> str:
         const container = document.getElementById('container');
         let activeItems = {}; // Track all active combo items
         
+        // Function to get the base URL for server
+        function getBaseUrl() {
+            // If the URL already includes the server URL, use that
+            const pathSegments = window.location.pathname.split('/');
+            const lastSegment = pathSegments[pathSegments.length - 1];
+            
+            // If the last segment is overlay.html, we're in the static directory
+            if (lastSegment === 'overlay.html') {
+                return '';
+            }
+            
+            return '';
+        }
+        
         function updateDisplay(data) {
             debug("Updating display with data: " + JSON.stringify(data));
             
@@ -351,7 +365,13 @@ def get_html_overlay_content(server_url: str = None) -> str:
                 displayHtml += '<div class="emote-container">';
                 
                 if (item.is_emote) {
-                    if (item.emote_url) {
+                    // First try to use local emote path if available
+                    if (item.local_emote_path) {
+                        const baseUrl = getBaseUrl();
+                        const localEmoteUrl = `${baseUrl}${item.local_emote_path}`;
+                        debug(`Using local emote path for ${item.text}: ${localEmoteUrl}`);
+                        displayHtml += `<img src="${localEmoteUrl}" class="emote-img" alt="${item.text}" onerror="this.onerror=null; this.src='${item.emote_url || ''}'; if(!this.src) { this.innerHTML='${item.text}'; this.className='emote'; }">`;
+                    } else if (item.emote_url) {
                         debug(`Using emote image URL for ${item.text}: ${item.emote_url}`);
                         displayHtml += `<img src="${item.emote_url}" class="emote-img" alt="${item.text}" onerror="this.onerror=null; this.innerHTML='${item.text}'; this.className='emote';">`;
                     } else if (item.emote_id) {
@@ -479,7 +499,7 @@ def get_html_overlay_content(server_url: str = None) -> str:
         }
         
         // Function to load data with error handling"""
-        
+    
     # Insert the server-specific fetch code
     fetch_code = """
         function loadData() {

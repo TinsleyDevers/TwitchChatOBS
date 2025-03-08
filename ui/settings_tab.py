@@ -333,14 +333,31 @@ class SettingsTab:
         min_combo_spin = ttk.Spinbox(combo_grid, from_=1, to=20, textvariable=self.min_combo_count_var)
         min_combo_spin.grid(row=2, column=1, sticky='ew', padx=5, pady=5)
         
+        # Minimum word length to track
+        ttk.Label(combo_grid, text="Minimum Word Length to Track:").grid(row=3, column=0, sticky='w', padx=5, pady=5)
+        self.min_word_length_var = tk.StringVar(value=self.tracker.config.get('General', 'min_word_length', fallback='2'))
+        min_word_length_spin = ttk.Spinbox(combo_grid, from_=1, to=10, textvariable=self.min_word_length_var)
+        min_word_length_spin.grid(row=3, column=1, sticky='ew', padx=5, pady=5)
+        
+        # Maximum words per message to process
+        ttk.Label(combo_grid, text="Maximum Words Per Message:").grid(row=4, column=0, sticky='w', padx=5, pady=5)
+        self.max_words_per_message_var = tk.StringVar(value=self.tracker.config.get('General', 'max_words_per_message', fallback='1'))
+        max_words_spin = ttk.Spinbox(combo_grid, from_=1, to=20, textvariable=self.max_words_per_message_var)
+        max_words_spin.grid(row=4, column=1, sticky='ew', padx=5, pady=5)
+        
         # Allow multiple from user
         ttk.Checkbutton(combo_grid, text="Allow multiple contributions from same user", 
-                       variable=self.allow_multiple_var).grid(row=3, column=0, columnspan=2, sticky='w', padx=5, pady=5)
+                       variable=self.allow_multiple_var).grid(row=5, column=0, columnspan=2, sticky='w', padx=5, pady=5)
+        
+        # Use local emotes toggle
+        self.use_local_emotes_var = tk.BooleanVar(value=self.tracker.config.getboolean('General', 'use_local_emotes', fallback=True))
+        ttk.Checkbutton(combo_grid, text="Use downloaded emote images", 
+                       variable=self.use_local_emotes_var).grid(row=6, column=0, columnspan=2, sticky='w', padx=5, pady=5)
         
         # Help info
-        help_text = "Combo Timeout: Maximum time between occurrences to count as a combo\nDisplay Time: How long to show each item in the overlay\nMinimum Combo: Minimum combo count before showing in overlay"
+        help_text = "Combo Timeout: Maximum time between occurrences to count as a combo\nDisplay Time: How long to show each item in the overlay\nMinimum Combo: Minimum combo count before showing in overlay\nMinimum Word Length: Shortest word to track (except emotes)\nMaximum Words: Process up to this many words from a message"
         help_label = ttk.Label(combo_grid, text=help_text, wraplength=300, justify='left')
-        help_label.grid(row=4, column=0, columnspan=2, sticky='w', padx=5, pady=5)
+        help_label.grid(row=7, column=0, columnspan=2, sticky='w', padx=5, pady=5)
         
         # Set column weights
         combo_grid.columnconfigure(1, weight=1)
@@ -450,11 +467,15 @@ class SettingsTab:
             self.tracker.config['Overlay']['font'] = self.overlay_font_var.get()
             
             # Update Combo settings
+            # Update Combo settings
             logger.debug("Updating Combo settings")
             self.tracker.config['General']['default_combo_timeout'] = self.default_combo_timeout_var.get()
             self.tracker.config['General']['default_display_time'] = self.default_display_time_var.get()
             self.tracker.config['General']['min_combo_count'] = self.min_combo_count_var.get()
             self.tracker.config['General']['allow_multiple_from_user'] = str(self.allow_multiple_var.get()).lower()
+            self.tracker.config['General']['min_word_length'] = self.min_word_length_var.get()
+            self.tracker.config['General']['max_words_per_message'] = self.max_words_per_message_var.get()
+            self.tracker.config['General']['use_local_emotes'] = str(self.use_local_emotes_var.get()).lower()
             
             # Save the config to file
             logger.debug("Saving config to file")
@@ -469,6 +490,10 @@ class SettingsTab:
             
             self.tracker.default_combo_timeout = int(self.default_combo_timeout_var.get())
             self.tracker.default_display_time = int(self.default_display_time_var.get())
+            
+            # New settings
+            self.tracker.min_word_length = int(self.min_word_length_var.get())
+            self.tracker.max_words_per_message = int(self.max_words_per_message_var.get())
             
             # Ensure min_combo_count exists on the tracker object
             if hasattr(self.tracker, 'min_combo_count'):

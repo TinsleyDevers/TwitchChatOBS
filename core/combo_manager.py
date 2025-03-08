@@ -65,7 +65,8 @@ class ComboManager:
                            is_emote: bool = False,
                            emote_id: Optional[str] = None,
                            emote_url: Optional[str] = None,
-                           config: Optional[EmoteConfig] = None) -> Tuple[int, bool]:
+                           config: Optional[EmoteConfig] = None,
+                           local_emote_path: Optional[str] = None) -> Tuple[int, bool]:
         """
         Add or update a combo for a word/emote.
         
@@ -76,6 +77,7 @@ class ComboManager:
             emote_id: Optional emote ID
             emote_url: Optional emote URL
             config: Optional config for this word/emote
+            local_emote_path: Optional path to local emote image
             
         Returns:
             Tuple[int, bool]: (combo count, is new combo)
@@ -114,6 +116,7 @@ class ComboManager:
                     is_emote=is_emote,
                     emote_id=emote_id,
                     emote_url=emote_url,
+                    local_emote_path=local_emote_path,
                     expires=now + timeout,
                     contributors={username}
                 )
@@ -136,6 +139,7 @@ class ComboManager:
                     "is_emote": combo_item.is_emote,
                     "emote_id": combo_item.emote_id,
                     "emote_url": combo_item.emote_url,
+                    "local_emote_path": combo_item.local_emote_path,
                     "expires": int(combo_item.expires * 1000),  # Convert to milliseconds for JS
                     "contributors": list(combo_item.contributors)
                 })
@@ -175,6 +179,7 @@ class ComboManager:
                 "is_emote": combo_item.is_emote,
                 "emote_id": combo_item.emote_id,
                 "emote_url": combo_item.emote_url,
+                "local_emote_path": combo_item.local_emote_path,
                 "expires": int(combo_item.expires * 1000),  # Convert to milliseconds for JS
                 "contributors": list(combo_item.contributors)
             }
