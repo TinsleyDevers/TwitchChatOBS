@@ -188,3 +188,535 @@
 2025-03-08 07:47:09,985 - TwitchTracker - INFO - Twitch Tracker stopped
 2025-03-08 07:47:10,113 - TwitchTracker - INFO - Connected to Twitch channel #zambied
 2025-03-08 07:47:10,735 - TwitchTracker - INFO - GUI closed
+2025-03-08 07:54:40,355 - TwitchTracker - INFO - Logging initialized to C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\twitch_tracker.log
+2025-03-08 07:54:40,355 - TwitchTracker - INFO - Starting TwitchTracker
+2025-03-08 07:54:40,356 - TwitchTracker.LocalServer - INFO - Starting server from directory: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS
+2025-03-08 07:54:40,356 - TwitchTracker.LocalServer - INFO - Static files located in: static
+2025-03-08 07:54:40,357 - TwitchTracker.LocalServer - INFO - Started local server at http://localhost:8000
+2025-03-08 07:54:40,358 - TwitchTracker - INFO - Started local server at http://localhost:8000/static
+2025-03-08 07:54:40,595 - TwitchTracker.AudioManager - INFO - Pygame audio initialized
+2025-03-08 07:54:40,844 - TwitchTracker.AudioManager - INFO - TTS engine initialized
+2025-03-08 07:54:40,844 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 07:54:40,848 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 07:54:40,848 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 07:54:40,850 - TwitchTracker.HTMLGenerator - INFO - Created HTML overlay at C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 07:54:40,850 - TwitchTracker - INFO - HTML overlay created at: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 07:54:40,851 - TwitchTracker - INFO - Initializing GUI
+2025-03-08 07:54:40,920 - TwitchTracker.SettingsTab - INFO - Creating missing config section: UI
+2025-03-08 07:54:44,970 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 07:54:44,977 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 07:54:44,979 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 07:54:45,127 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:54:45,187 - TwitchTracker.BTTVProvider - INFO - Loaded 65 BTTV emotes
+2025-03-08 07:54:45,597 - TwitchTracker.FFZProvider - INFO - Loaded 47 FFZ emotes
+2025-03-08 07:54:45,839 - TwitchTracker.SevenTVProvider - ERROR - Error fetching 7TV emotes: 410 Client Error: Gone for url: https://api.7tv.app/v2/emotes/global
+2025-03-08 07:54:45,841 - TwitchTracker - INFO - Emotes list saved
+2025-03-08 07:54:45,842 - TwitchTracker - INFO - Loaded 110 emotes from all providers
+2025-03-08 07:56:19,562 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 07:56:19,563 - TwitchTracker - ERROR - Error in chat listener: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-03-08 07:56:19,564 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 07:56:19,564 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 07:56:19,744 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:56:25,836 - TwitchTracker.SettingsTab - INFO - Starting to save settings
+2025-03-08 07:56:25,838 - TwitchTracker - INFO - Configuration saved
+2025-03-08 07:56:25,838 - TwitchTracker.SettingsTab - INFO - Adding min_combo_count attribute to tracker
+2025-03-08 07:56:25,839 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 07:56:25,841 - TwitchTracker.SettingsTab - INFO - Settings saved successfully
+2025-03-08 07:56:44,586 - TwitchTracker.SettingsTab - INFO - Starting to save settings
+2025-03-08 07:56:44,588 - TwitchTracker - INFO - Configuration saved
+2025-03-08 07:56:44,588 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 07:56:44,590 - TwitchTracker.SettingsTab - INFO - Settings saved successfully
+2025-03-08 07:56:47,021 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 07:56:47,024 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 07:56:47,025 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 07:56:47,027 - TwitchTracker - INFO - Speaking text: 'test', TTS enabled: True
+2025-03-08 07:56:47,028 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'test'
+2025-03-08 07:56:47,028 - TwitchTracker - INFO - TTS result: True
+2025-03-08 07:56:47,031 - TwitchTracker - INFO - Speaking text: 'test', TTS enabled: True
+2025-03-08 07:56:47,032 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'test'
+2025-03-08 07:56:47,032 - TwitchTracker - INFO - TTS result: True
+2025-03-08 07:56:47,032 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 07:56:47,121 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 07:56:48,471 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 07:57:06,113 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 07:57:32,377 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 07:57:32,378 - TwitchTracker - ERROR - Error in chat listener: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-03-08 07:57:32,379 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 07:57:32,379 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 07:57:32,537 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:01:25,537 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 08:01:25,542 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 08:01:25,543 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 08:01:25,545 - TwitchTracker - INFO - Speaking text: '@avgmanutdfan', TTS enabled: True
+2025-03-08 08:01:25,546 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '@avgmanutdfan'
+2025-03-08 08:01:25,546 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,552 - TwitchTracker - INFO - Speaking text: 'phantom', TTS enabled: True
+2025-03-08 08:01:25,554 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'phantom'
+2025-03-08 08:01:25,555 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,555 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,557 - TwitchTracker - INFO - Speaking text: 'dont', TTS enabled: True
+2025-03-08 08:01:25,558 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'dont'
+2025-03-08 08:01:25,558 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,558 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,561 - TwitchTracker - INFO - Speaking text: 'this', TTS enabled: True
+2025-03-08 08:01:25,561 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'this'
+2025-03-08 08:01:25,562 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,562 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,564 - TwitchTracker - INFO - Speaking text: 'round', TTS enabled: True
+2025-03-08 08:01:25,571 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'round'
+2025-03-08 08:01:25,571 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,571 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,575 - TwitchTracker - INFO - Speaking text: 'vote', TTS enabled: True
+2025-03-08 08:01:25,576 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'vote'
+2025-03-08 08:01:25,576 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,576 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,580 - TwitchTracker - INFO - Speaking text: 'chat?', TTS enabled: True
+2025-03-08 08:01:25,586 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'chat?'
+2025-03-08 08:01:25,586 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,586 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,589 - TwitchTracker - INFO - Speaking text: 'they', TTS enabled: True
+2025-03-08 08:01:25,590 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'they'
+2025-03-08 08:01:25,590 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,590 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,593 - TwitchTracker - INFO - Speaking text: 'are', TTS enabled: True
+2025-03-08 08:01:25,594 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'are'
+2025-03-08 08:01:25,594 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,594 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,597 - TwitchTracker - INFO - Speaking text: 'low', TTS enabled: True
+2025-03-08 08:01:25,599 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'low'
+2025-03-08 08:01:25,599 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,601 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,606 - TwitchTracker - INFO - Speaking text: 'armor', TTS enabled: True
+2025-03-08 08:01:25,607 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'armor'
+2025-03-08 08:01:25,607 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,607 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,611 - TwitchTracker - INFO - Speaking text: 'hehe', TTS enabled: True
+2025-03-08 08:01:25,612 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'hehe'
+2025-03-08 08:01:25,612 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,612 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,615 - TwitchTracker - INFO - Speaking text: 'nyeeeah', TTS enabled: True
+2025-03-08 08:01:25,616 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'nyeeeah'
+2025-03-08 08:01:25,616 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,617 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,621 - TwitchTracker - INFO - Speaking text: 'fam', TTS enabled: True
+2025-03-08 08:01:25,621 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'fam'
+2025-03-08 08:01:25,622 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,622 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,625 - TwitchTracker - INFO - Speaking text: 'Shanks?', TTS enabled: True
+2025-03-08 08:01:25,625 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'Shanks?'
+2025-03-08 08:01:25,626 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,626 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,628 - TwitchTracker - INFO - Speaking text: 'bro', TTS enabled: True
+2025-03-08 08:01:25,629 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'bro'
+2025-03-08 08:01:25,629 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,629 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,632 - TwitchTracker - INFO - Speaking text: 'look', TTS enabled: True
+2025-03-08 08:01:25,637 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'look'
+2025-03-08 08:01:25,637 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,637 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,640 - TwitchTracker - INFO - Speaking text: 'their', TTS enabled: True
+2025-03-08 08:01:25,641 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'their'
+2025-03-08 08:01:25,641 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,642 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,644 - TwitchTracker - INFO - Speaking text: 'buy', TTS enabled: True
+2025-03-08 08:01:25,645 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'buy'
+2025-03-08 08:01:25,645 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,645 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,648 - TwitchTracker - INFO - Speaking text: '!record', TTS enabled: True
+2025-03-08 08:01:25,651 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '!record'
+2025-03-08 08:01:25,651 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,652 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,655 - TwitchTracker - INFO - Speaking text: 'OOOO', TTS enabled: True
+2025-03-08 08:01:25,656 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'OOOO'
+2025-03-08 08:01:25,656 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,656 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,659 - TwitchTracker - INFO - Speaking text: '!rank', TTS enabled: True
+2025-03-08 08:01:25,660 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '!rank'
+2025-03-08 08:01:25,660 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,661 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,663 - TwitchTracker - INFO - Speaking text: 'prsraze,', TTS enabled: True
+2025-03-08 08:01:25,670 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'prsraze,'
+2025-03-08 08:01:25,670 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,671 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,674 - TwitchTracker - INFO - Speaking text: 'Subroza', TTS enabled: True
+2025-03-08 08:01:25,675 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'Subroza'
+2025-03-08 08:01:25,675 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,675 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,677 - TwitchTracker - INFO - Speaking text: 'has', TTS enabled: True
+2025-03-08 08:01:25,678 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'has'
+2025-03-08 08:01:25,678 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,678 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,680 - TwitchTracker - INFO - Speaking text: 'record', TTS enabled: True
+2025-03-08 08:01:25,682 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'record'
+2025-03-08 08:01:25,682 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,682 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,685 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:01:25,686 - TwitchTracker - INFO - Speaking text: '2W-0L-0D', TTS enabled: True
+2025-03-08 08:01:25,687 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '2W-0L-0D'
+2025-03-08 08:01:25,687 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,688 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,690 - TwitchTracker - INFO - Speaking text: 'over', TTS enabled: True
+2025-03-08 08:01:25,691 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'over'
+2025-03-08 08:01:25,691 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,691 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,694 - TwitchTracker - INFO - Speaking text: 'course', TTS enabled: True
+2025-03-08 08:01:25,694 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'course'
+2025-03-08 08:01:25,694 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,695 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,697 - TwitchTracker - INFO - Speaking text: 'this 2', TTS enabled: True
+2025-03-08 08:01:25,699 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'this 2'
+2025-03-08 08:01:25,699 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,700 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,703 - TwitchTracker - INFO - Speaking text: 'stream.', TTS enabled: True
+2025-03-08 08:01:25,705 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'stream.'
+2025-03-08 08:01:25,705 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,705 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,708 - TwitchTracker - INFO - Speaking text: 'Yassine's', TTS enabled: True
+2025-03-08 08:01:25,709 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'Yassine's'
+2025-03-08 08:01:25,709 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,709 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,712 - TwitchTracker - INFO - Speaking text: 'current', TTS enabled: True
+2025-03-08 08:01:25,712 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'current'
+2025-03-08 08:01:25,712 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,713 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,716 - TwitchTracker - INFO - Speaking text: 'rank', TTS enabled: True
+2025-03-08 08:01:25,718 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'rank'
+2025-03-08 08:01:25,718 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,719 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,722 - TwitchTracker - INFO - Speaking text: 'Immortal', TTS enabled: True
+2025-03-08 08:01:25,723 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'Immortal'
+2025-03-08 08:01:25,723 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,723 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,725 - TwitchTracker - INFO - Speaking text: '359', TTS enabled: True
+2025-03-08 08:01:25,726 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '359'
+2025-03-08 08:01:25,726 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,726 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,728 - TwitchTracker - INFO - Speaking text: 'RR.', TTS enabled: True
+2025-03-08 08:01:25,729 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'RR.'
+2025-03-08 08:01:25,729 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,729 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,732 - TwitchTracker - INFO - Speaking text: 'yeah', TTS enabled: True
+2025-03-08 08:01:25,733 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'yeah'
+2025-03-08 08:01:25,733 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,735 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,740 - TwitchTracker - INFO - Speaking text: 'this 3', TTS enabled: True
+2025-03-08 08:01:25,741 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'this 3'
+2025-03-08 08:01:25,741 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,741 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,743 - TwitchTracker - INFO - Speaking text: 'round', TTS enabled: True
+2025-03-08 08:01:25,744 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'round'
+2025-03-08 08:01:25,744 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,744 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,747 - TwitchTracker - INFO - Speaking text: 'tho', TTS enabled: True
+2025-03-08 08:01:25,747 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'tho'
+2025-03-08 08:01:25,748 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,748 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,754 - TwitchTracker - INFO - Speaking text: 'yazzerrss,', TTS enabled: True
+2025-03-08 08:01:25,755 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'yazzerrss,'
+2025-03-08 08:01:25,755 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,755 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,757 - TwitchTracker - INFO - Speaking text: 'Immortal 2', TTS enabled: True
+2025-03-08 08:01:25,758 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'Immortal 2'
+2025-03-08 08:01:25,758 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,758 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,761 - TwitchTracker - INFO - Speaking text: '359 2', TTS enabled: True
+2025-03-08 08:01:25,761 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '359 2'
+2025-03-08 08:01:25,761 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,762 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,764 - TwitchTracker - INFO - Speaking text: 'bye', TTS enabled: True
+2025-03-08 08:01:25,767 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'bye'
+2025-03-08 08:01:25,767 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,768 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,771 - TwitchTracker - INFO - Speaking text: 'play', TTS enabled: True
+2025-03-08 08:01:25,772 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'play'
+2025-03-08 08:01:25,772 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,773 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,775 - TwitchTracker - INFO - Speaking text: 'take', TTS enabled: True
+2025-03-08 08:01:25,776 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'take'
+2025-03-08 08:01:25,776 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,776 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,778 - TwitchTracker - INFO - Speaking text: 'byee', TTS enabled: True
+2025-03-08 08:01:25,780 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'byee'
+2025-03-08 08:01:25,780 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,780 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,783 - TwitchTracker - INFO - Speaking text: 'nats', TTS enabled: True
+2025-03-08 08:01:25,786 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'nats'
+2025-03-08 08:01:25,786 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,786 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,790 - TwitchTracker - INFO - Speaking text: 'fanum', TTS enabled: True
+2025-03-08 08:01:25,790 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'fanum'
+2025-03-08 08:01:25,791 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,791 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,793 - TwitchTracker - INFO - Speaking text: 'n0ts', TTS enabled: True
+2025-03-08 08:01:25,794 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'n0ts'
+2025-03-08 08:01:25,794 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,794 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,796 - TwitchTracker - INFO - Speaking text: '@avgmanutdfan', TTS enabled: True
+2025-03-08 08:01:25,797 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '@avgmanutdfan'
+2025-03-08 08:01:25,798 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,798 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,801 - TwitchTracker - INFO - Speaking text: 'why', TTS enabled: True
+2025-03-08 08:01:25,803 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'why'
+2025-03-08 08:01:25,803 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,804 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,808 - TwitchTracker - INFO - Speaking text: 'you', TTS enabled: True
+2025-03-08 08:01:25,809 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'you'
+2025-03-08 08:01:25,809 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,810 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,813 - TwitchTracker - INFO - Speaking text: 'using', TTS enabled: True
+2025-03-08 08:01:25,815 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'using'
+2025-03-08 08:01:25,815 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,816 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,821 - TwitchTracker - INFO - Speaking text: 'nats', TTS enabled: True
+2025-03-08 08:01:25,822 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'nats'
+2025-03-08 08:01:25,822 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,822 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,825 - TwitchTracker - INFO - Speaking text: 'skin', TTS enabled: True
+2025-03-08 08:01:25,826 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'skin'
+2025-03-08 08:01:25,826 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,827 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,828 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:01:25,829 - TwitchTracker - INFO - Speaking text: 'feelin', TTS enabled: True
+2025-03-08 08:01:25,829 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'feelin'
+2025-03-08 08:01:25,829 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,829 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,831 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:01:25,834 - TwitchTracker - INFO - Speaking text: 'nerdy', TTS enabled: True
+2025-03-08 08:01:25,835 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'nerdy'
+2025-03-08 08:01:25,835 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,835 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:25,837 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:01:25,838 - TwitchTracker - INFO - Speaking text: 'today', TTS enabled: True
+2025-03-08 08:01:25,839 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'today'
+2025-03-08 08:01:25,839 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:01:25,839 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:01:27,611 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 08:01:27,612 - TwitchTracker - ERROR - Error in chat listener: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-03-08 08:01:27,613 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 08:01:27,613 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 08:01:27,677 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:01:27,705 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:02:27,790 - TwitchTracker - INFO - GUI closed
+2025-03-08 08:02:31,443 - TwitchTracker - INFO - Logging initialized to C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\twitch_tracker.log
+2025-03-08 08:02:31,444 - TwitchTracker - INFO - Starting TwitchTracker
+2025-03-08 08:02:31,445 - TwitchTracker.LocalServer - INFO - Starting server from directory: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS
+2025-03-08 08:02:31,446 - TwitchTracker.LocalServer - INFO - Static files located in: static
+2025-03-08 08:02:31,447 - TwitchTracker.LocalServer - INFO - Started local server at http://localhost:8000
+2025-03-08 08:02:31,448 - TwitchTracker - INFO - Started local server at http://localhost:8000/static
+2025-03-08 08:02:31,644 - TwitchTracker.AudioManager - INFO - Pygame audio initialized
+2025-03-08 08:02:31,865 - TwitchTracker.AudioManager - INFO - TTS engine initialized
+2025-03-08 08:02:31,866 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 08:02:31,870 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:02:31,870 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 08:02:31,871 - TwitchTracker.HTMLGenerator - INFO - Created HTML overlay at C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:02:31,871 - TwitchTracker - INFO - HTML overlay created at: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 08:02:31,872 - TwitchTracker - INFO - Initializing GUI
+2025-03-08 08:02:34,892 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 08:02:34,899 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 08:02:34,900 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 08:02:35,046 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:02:35,117 - TwitchTracker.BTTVProvider - INFO - Loaded 65 BTTV emotes
+2025-03-08 08:02:35,530 - TwitchTracker.FFZProvider - INFO - Loaded 48 FFZ emotes
+2025-03-08 08:02:35,756 - TwitchTracker.SevenTVProvider - ERROR - Error fetching 7TV emotes: 410 Client Error: Gone for url: https://api.7tv.app/v2/emotes/global
+2025-03-08 08:02:35,757 - TwitchTracker - INFO - Emotes list saved
+2025-03-08 08:02:35,758 - TwitchTracker - INFO - Loaded 113 emotes from all providers
+2025-03-08 08:02:57,549 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 08:02:57,550 - TwitchTracker - ERROR - Error in chat listener: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-03-08 08:02:57,551 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 08:02:57,551 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 08:02:57,646 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:03:17,143 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 08:03:17,147 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 08:03:17,148 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 08:03:17,150 - TwitchTracker - INFO - Speaking text: 'this', TTS enabled: True
+2025-03-08 08:03:17,151 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'this'
+2025-03-08 08:03:17,151 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,154 - TwitchTracker - INFO - Speaking text: 'phantom', TTS enabled: True
+2025-03-08 08:03:17,155 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'phantom'
+2025-03-08 08:03:17,155 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,156 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,159 - TwitchTracker - INFO - Speaking text: 'too', TTS enabled: True
+2025-03-08 08:03:17,159 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'too'
+2025-03-08 08:03:17,159 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,160 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,162 - TwitchTracker - INFO - Speaking text: 'nice', TTS enabled: True
+2025-03-08 08:03:17,162 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'nice'
+2025-03-08 08:03:17,162 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,163 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,165 - TwitchTracker - INFO - Speaking text: 'this 2', TTS enabled: True
+2025-03-08 08:03:17,166 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'this 2'
+2025-03-08 08:03:17,167 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,167 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,170 - TwitchTracker - INFO - Speaking text: 'roza', TTS enabled: True
+2025-03-08 08:03:17,171 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'roza'
+2025-03-08 08:03:17,171 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,171 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,173 - TwitchTracker - INFO - Speaking text: 'love', TTS enabled: True
+2025-03-08 08:03:17,176 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'love'
+2025-03-08 08:03:17,176 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,177 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,180 - TwitchTracker - INFO - Speaking text: 'good', TTS enabled: True
+2025-03-08 08:03:17,181 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'good'
+2025-03-08 08:03:17,181 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,181 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,183 - TwitchTracker - INFO - Speaking text: 'job', TTS enabled: True
+2025-03-08 08:03:17,184 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'job'
+2025-03-08 08:03:17,184 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,184 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,187 - TwitchTracker - INFO - Speaking text: 'unc', TTS enabled: True
+2025-03-08 08:03:17,188 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'unc'
+2025-03-08 08:03:17,188 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,189 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,191 - TwitchTracker - INFO - Speaking text: 'ACCESS', TTS enabled: True
+2025-03-08 08:03:17,192 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'ACCESS'
+2025-03-08 08:03:17,193 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,193 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,196 - TwitchTracker - INFO - Speaking text: 'SITE', TTS enabled: True
+2025-03-08 08:03:17,196 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'SITE'
+2025-03-08 08:03:17,197 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,197 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,199 - TwitchTracker - INFO - Speaking text: 'are', TTS enabled: True
+2025-03-08 08:03:17,200 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'are'
+2025-03-08 08:03:17,201 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,201 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,203 - TwitchTracker - INFO - Speaking text: 'you', TTS enabled: True
+2025-03-08 08:03:17,204 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'you'
+2025-03-08 08:03:17,204 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,204 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,207 - TwitchTracker - INFO - Speaking text: 'going', TTS enabled: True
+2025-03-08 08:03:17,208 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'going'
+2025-03-08 08:03:17,208 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,209 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,212 - TwitchTracker - INFO - Speaking text: 'watchparty', TTS enabled: True
+2025-03-08 08:03:17,213 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'watchparty'
+2025-03-08 08:03:17,213 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,213 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,216 - TwitchTracker - INFO - Speaking text: 'sideman', TTS enabled: True
+2025-03-08 08:03:17,216 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'sideman'
+2025-03-08 08:03:17,216 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,217 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,219 - TwitchTracker - INFO - Speaking text: 'charity', TTS enabled: True
+2025-03-08 08:03:17,220 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'charity'
+2025-03-08 08:03:17,221 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,221 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,223 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:03:17,223 - TwitchTracker - INFO - Speaking text: 'match', TTS enabled: True
+2025-03-08 08:03:17,224 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'match'
+2025-03-08 08:03:17,224 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,224 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,227 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:03:17,228 - TwitchTracker - INFO - Speaking text: 'subroza?', TTS enabled: True
+2025-03-08 08:03:17,228 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'subroza?'
+2025-03-08 08:03:17,228 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,229 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,230 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:03:17,231 - TwitchTracker - INFO - Speaking text: '100%', TTS enabled: True
+2025-03-08 08:03:17,231 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '100%'
+2025-03-08 08:03:17,231 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,232 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,233 - TwitchTracker.FileUtils - ERROR - Failed to write JSON file C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay_data.json: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\tinsl\\OneDrive\\Documents\\GitHub\\TinsleyOBS\\static\\overlay_data.json'
+2025-03-08 08:03:17,234 - TwitchTracker - INFO - Speaking text: '@ScaryYokai', TTS enabled: True
+2025-03-08 08:03:17,235 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '@ScaryYokai'
+2025-03-08 08:03:17,235 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,235 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,237 - TwitchTracker - INFO - Speaking text: 'hmm', TTS enabled: True
+2025-03-08 08:03:17,239 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'hmm'
+2025-03-08 08:03:17,239 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,240 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,243 - TwitchTracker - INFO - Speaking text: 'dont', TTS enabled: True
+2025-03-08 08:03:17,244 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'dont'
+2025-03-08 08:03:17,244 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,244 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,246 - TwitchTracker - INFO - Speaking text: 'mind', TTS enabled: True
+2025-03-08 08:03:17,246 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'mind'
+2025-03-08 08:03:17,246 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,247 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,248 - TwitchTracker - INFO - Speaking text: 'asking', TTS enabled: True
+2025-03-08 08:03:17,249 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'asking'
+2025-03-08 08:03:17,249 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,249 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,251 - TwitchTracker - INFO - Speaking text: 'which', TTS enabled: True
+2025-03-08 08:03:17,251 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'which'
+2025-03-08 08:03:17,252 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,252 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,253 - TwitchTracker - INFO - Speaking text: 'area', TTS enabled: True
+2025-03-08 08:03:17,254 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'area'
+2025-03-08 08:03:17,254 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,254 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,256 - TwitchTracker - INFO - Speaking text: 'work', TTS enabled: True
+2025-03-08 08:03:17,257 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'work'
+2025-03-08 08:03:17,257 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,257 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,259 - TwitchTracker - INFO - Speaking text: 'like', TTS enabled: True
+2025-03-08 08:03:17,260 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'like'
+2025-03-08 08:03:17,260 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,260 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,262 - TwitchTracker - INFO - Speaking text: 'whats', TTS enabled: True
+2025-03-08 08:03:17,263 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'whats'
+2025-03-08 08:03:17,263 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,263 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,265 - TwitchTracker - INFO - Speaking text: 'your', TTS enabled: True
+2025-03-08 08:03:17,266 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'your'
+2025-03-08 08:03:17,266 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,266 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,268 - TwitchTracker - INFO - Speaking text: 'expertise', TTS enabled: True
+2025-03-08 08:03:17,269 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'expertise'
+2025-03-08 08:03:17,269 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,269 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,271 - TwitchTracker - INFO - Speaking text: '1000%', TTS enabled: True
+2025-03-08 08:03:17,272 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '1000%'
+2025-03-08 08:03:17,272 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,272 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,274 - TwitchTracker - INFO - Speaking text: 'phantom', TTS enabled: True
+2025-03-08 08:03:17,275 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'phantom'
+2025-03-08 08:03:17,275 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,275 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,277 - TwitchTracker - INFO - Speaking text: 'hitting', TTS enabled: True
+2025-03-08 08:03:17,278 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'hitting'
+2025-03-08 08:03:17,278 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:17,278 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:17,421 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:03:18,494 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:03:21,263 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 08:03:21,264 - TwitchTracker - ERROR - Error in chat listener: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-03-08 08:03:21,264 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 08:03:21,265 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 08:03:21,353 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:03:55,078 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 08:03:55,083 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 08:03:55,085 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 08:03:55,088 - TwitchTracker - INFO - Speaking text: 'want', TTS enabled: True
+2025-03-08 08:03:55,089 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'want'
+2025-03-08 08:03:55,089 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:55,092 - TwitchTracker - INFO - Speaking text: '10-0', TTS enabled: True
+2025-03-08 08:03:55,097 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '10-0'
+2025-03-08 08:03:55,097 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:55,100 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:55,103 - TwitchTracker - INFO - Speaking text: 'day', TTS enabled: True
+2025-03-08 08:03:55,104 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'day'
+2025-03-08 08:03:55,104 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:55,104 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:55,107 - TwitchTracker - INFO - Speaking text: 'Hearing', TTS enabled: True
+2025-03-08 08:03:55,109 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'Hearing'
+2025-03-08 08:03:55,109 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:55,111 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:55,116 - TwitchTracker - INFO - Speaking text: 'boing', TTS enabled: True
+2025-03-08 08:03:55,117 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'boing'
+2025-03-08 08:03:55,117 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:55,117 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:55,120 - TwitchTracker - INFO - Speaking text: 'boing 2', TTS enabled: True
+2025-03-08 08:03:55,121 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'boing 2'
+2025-03-08 08:03:55,121 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:55,121 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:55,124 - TwitchTracker - INFO - Speaking text: 'boing 3', TTS enabled: True
+2025-03-08 08:03:55,124 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'boing 3'
+2025-03-08 08:03:55,124 - TwitchTracker - INFO - TTS result: True
+2025-03-08 08:03:55,126 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 08:03:55,219 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:03:56,509 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 08:04:41,182 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 08:04:41,183 - TwitchTracker - ERROR - Error in chat listener: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-03-08 08:04:41,184 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 08:04:41,184 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 08:04:41,279 - TwitchTracker - INFO - Connected to Twitch channel #subroza
+2025-03-08 08:09:29,105 - TwitchTracker - INFO - GUI closed

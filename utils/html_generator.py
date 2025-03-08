@@ -292,8 +292,26 @@ def get_html_overlay_content(server_url: str = None) -> str:
                 return;
             }
             
-            // Process each item
-            data.items.forEach(item => {
+            // Filter out expired items from the incoming data
+            const now = Date.now();
+            const validItems = data.items.filter(item => {
+                const isExpired = item.expires && now > item.expires;
+                if (isExpired) {
+                    debug(`Ignoring already-expired item: ${item.text}`);
+                }
+                return !isExpired;
+            });
+            
+            // If all items are expired, clear the display
+            if (validItems.length === 0) {
+                debug("All items are expired, clearing display");
+                container.innerHTML = '';
+                activeItems = {};
+                return;
+            }
+            
+            // Process each valid item
+            validItems.forEach(item => {
                 if (!item || !item.text) {
                     debug(`Skipping invalid item: ${JSON.stringify(item)}`);
                     return;
@@ -384,7 +402,7 @@ def get_html_overlay_content(server_url: str = None) -> str:
             });
             
             // Remove items not in the current data
-            const currentIds = data.items
+            const currentIds = validItems
                 .filter(item => item && item.text)
                 .map(item => `item-${item.text.replace(/[^a-zA-Z0-9]/g, '')}`);
             
@@ -403,18 +421,22 @@ def get_html_overlay_content(server_url: str = None) -> str:
                         }
                         
                         setTimeout(() => {
-                            if (child.parentNode) {
-                                container.removeChild(child);
+                            try {
+                                if (child.parentNode) {
+                                    container.removeChild(child);
+                                    debug(`Removed element ${child.id} from DOM`);
+                                }
+                            } catch (err) {
+                                debug(`Error removing element: ${err.message}`);
                             }
                             delete activeItems[child.id];
+                            debug(`Removed ${child.id} from tracking`);
                         }, 500);
                     }
                 }
             });
         }
         
-        // Replace the cleanupExpiredItems function in html_generator.py with this code:
-
         function cleanupExpiredItems() {
             const now = Date.now();
             

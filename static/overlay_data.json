@@ -1,3 +1,59 @@
 {
-  "items": []
+  "items": [
+    {
+      "text": "said",
+      "combo": 1,
+      "is_emote": false,
+      "emote_id": null,
+      "emote_url": null,
+      "expires": 1741442682015,
+      "contributors": [
+        "ibtunechi"
+      ]
+    },
+    {
+      "text": "get",
+      "combo": 1,
+      "is_emote": false,
+      "emote_id": null,
+      "emote_url": null,
+      "expires": 1741442682015,
+      "contributors": [
+        "ibtunechi"
+      ]
+    },
+    {
+      "text": "half",
+      "combo": 1,
+      "is_emote": false,
+      "emote_id": null,
+      "emote_url": null,
+      "expires": 1741442682015,
+      "contributors": [
+        "ibtunechi"
+      ]
+    },
+    {
+      "text": "lol\\",
+      "combo": 1,
+      "is_emote": false,
+      "emote_id": null,
+      "emote_url": null,
+      "expires": 1741442682015,
+      "contributors": [
+        "ibtunechi"
+      ]
+    },
+    {
+      "text": "@RETR0_oo",
+      "combo": 1,
+      "is_emote": false,
+      "emote_id": null,
+      "emote_url": null,
+      "expires": 1741442683549,
+      "contributors": [
+        "folderr_"
+      ]
+    }
+  ]
 }

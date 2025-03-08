@@ -1,13 +1,15 @@
 """
 Settings tab for the Twitch Tracker application.
 """
-import tkinter as tk
 import os
+import tkinter as tk
 from tkinter import ttk, colorchooser, messagebox, filedialog
 from typing import Dict, Any
+import logging
 
 from core.tracker import TwitchTracker
 
+logger = logging.getLogger("TwitchTracker.SettingsTab")
 
 class SettingsTab:
     """Settings tab for configuring application settings."""
@@ -74,6 +76,13 @@ class SettingsTab:
     
     def load_variables_from_config(self):
         """Load variables from tracker configuration."""
+        logger.debug("Loading variables from config")
+        # Ensure all required sections exist
+        for section in ['Twitch', 'OBS', 'TTS', 'UI', 'Overlay', 'General']:
+            if section not in self.tracker.config:
+                logger.info(f"Creating missing config section: {section}")
+                self.tracker.config[section] = {}
+                
         # Twitch settings
         self.nick_var = tk.StringVar(value=self.tracker.config.get('Twitch', 'nickname', fallback=''))
         self.token_var = tk.StringVar(value=self.tracker.config.get('Twitch', 'token', fallback=''))
@@ -105,6 +114,8 @@ class SettingsTab:
         self.default_display_time_var = tk.StringVar(value=self.tracker.config.get('General', 'default_display_time', fallback='5'))
         self.min_combo_count_var = tk.StringVar(value=self.tracker.config.get('General', 'min_combo_count', fallback='1'))
         self.allow_multiple_var = tk.BooleanVar(value=self.tracker.config.getboolean('General', 'allow_multiple_from_user', fallback=True))
+        
+        logger.debug("Variables loaded from config")
     
     def _create_twitch_settings(self):
         """Create Twitch settings section."""
@@ -276,7 +287,18 @@ class SettingsTab:
         overlay_entry = ttk.Entry(overlay_grid, textvariable=overlay_path_var, state='readonly')
         overlay_entry.grid(row=3, column=1, sticky='ew', padx=5, pady=5)
         
-        open_button = ttk.Button(overlay_grid, text="Open Folder", command=lambda: os.startfile(os.path.dirname(overlay_path)))
+        def open_folder():
+            path = os.path.dirname(overlay_path)
+            try:
+                if os.path.exists(path):
+                    os.startfile(path)
+                else:
+                    messagebox.showwarning("Path not found", f"The folder {path} does not exist yet.")
+            except Exception as e:
+                logger.error(f"Error opening folder: {e}")
+                messagebox.showerror("Error", f"Could not open folder: {e}")
+        
+        open_button = ttk.Button(overlay_grid, text="Open Folder", command=open_folder)
         open_button.grid(row=3, column=2, padx=5, pady=5)
         
         # Help info
@@ -326,16 +348,16 @@ class SettingsTab:
     def save_settings(self):
         """Save settings to configuration."""
         try:
-            import logging
-            logger = logging.getLogger("TwitchTracker.SettingsTab")
             logger.info("Starting to save settings")
+            
             # Validate input values
             # Port should be a number
             try:
                 port = int(self.obs_port_var.get())
-                logger.info(f"OBS port validated: {port}")
+                logger.debug(f"OBS port validated: {port}")
             except ValueError:
                 messagebox.showerror("Invalid Input", "OBS port must be a number")
+                logger.error("Validation error: OBS port is not a number")
                 return
                 
             # TTS rate should be a number
@@ -343,9 +365,12 @@ class SettingsTab:
                 rate = int(self.tts_rate_var.get())
                 if not (100 <= rate <= 300):
                     messagebox.showerror("Invalid Input", "TTS rate must be between 100 and 300")
+                    logger.error(f"Validation error: TTS rate out of range: {rate}")
                     return
+                logger.debug(f"TTS rate validated: {rate}")
             except ValueError:
                 messagebox.showerror("Invalid Input", "TTS rate must be a number")
+                logger.error("Validation error: TTS rate is not a number")
                 return
                 
             # TTS volume should be a float
@@ -353,9 +378,12 @@ class SettingsTab:
                 volume = float(self.tts_volume_var.get())
                 if not (0.0 <= volume <= 1.0):
                     messagebox.showerror("Invalid Input", "TTS volume must be between 0.0 and 1.0")
+                    logger.error(f"Validation error: TTS volume out of range: {volume}")
                     return
+                logger.debug(f"TTS volume validated: {volume}")
             except ValueError:
                 messagebox.showerror("Invalid Input", "TTS volume must be a number")
+                logger.error("Validation error: TTS volume is not a number")
                 return
                 
             # Scale should be a float
@@ -363,9 +391,12 @@ class SettingsTab:
                 scale = float(self.overlay_scale_var.get())
                 if not (0.5 <= scale <= 2.0):
                     messagebox.showerror("Invalid Input", "Overlay scale must be between 0.5 and 2.0")
+                    logger.error(f"Validation error: Overlay scale out of range: {scale}")
                     return
+                logger.debug(f"Overlay scale validated: {scale}")
             except ValueError:
                 messagebox.showerror("Invalid Input", "Overlay scale must be a number")
+                logger.error("Validation error: Overlay scale is not a number")
                 return
 
             # Min combo count should be a positive integer
@@ -373,47 +404,64 @@ class SettingsTab:
                 min_combo = int(self.min_combo_count_var.get())
                 if min_combo < 1:
                     messagebox.showerror("Invalid Input", "Minimum combo count must be at least 1")
+                    logger.error(f"Validation error: Min combo count too low: {min_combo}")
                     return
+                logger.debug(f"Min combo count validated: {min_combo}")
             except ValueError:
                 messagebox.showerror("Invalid Input", "Minimum combo count must be a number")
+                logger.error("Validation error: Min combo count is not a number")
                 return
-                
+            
+            # Ensure all config sections exist
+            for section in ['Twitch', 'OBS', 'TTS', 'UI', 'Overlay', 'General']:
+                if section not in self.tracker.config:
+                    self.tracker.config[section] = {}
+                    logger.info(f"Created missing config section: {section}")
+            
             # Update Twitch settings
+            logger.debug("Updating Twitch settings")
             self.tracker.config['Twitch']['nickname'] = self.nick_var.get()
             self.tracker.config['Twitch']['token'] = self.token_var.get()
             self.tracker.config['Twitch']['channel'] = self.channel_var.get()
             self.tracker.config['Twitch']['channel_id'] = self.channel_id_var.get()
             
             # Update OBS settings
+            logger.debug("Updating OBS settings")
             self.tracker.config['OBS']['host'] = self.obs_host_var.get()
             self.tracker.config['OBS']['port'] = self.obs_port_var.get()
             self.tracker.config['OBS']['password'] = self.obs_password_var.get()
             self.tracker.config['OBS']['text_source'] = self.obs_source_var.get()
             
             # Update TTS settings
+            logger.debug("Updating TTS settings")
             self.tracker.config['TTS']['enabled'] = str(self.tts_enabled_var.get()).lower()
             self.tracker.config['TTS']['rate'] = self.tts_rate_var.get()
             self.tracker.config['TTS']['volume'] = self.tts_volume_var.get()
             
             # Update UI settings
+            logger.debug("Updating UI settings")
             self.tracker.config['UI']['theme'] = self.ui_theme_var.get()
             self.tracker.config['UI']['accent_color'] = self.ui_accent_var.get()
             
             # Update Overlay settings
+            logger.debug("Updating Overlay settings")
             self.tracker.config['Overlay']['position'] = self.overlay_position_var.get()
             self.tracker.config['Overlay']['scale'] = self.overlay_scale_var.get()
             self.tracker.config['Overlay']['font'] = self.overlay_font_var.get()
             
             # Update Combo settings
+            logger.debug("Updating Combo settings")
             self.tracker.config['General']['default_combo_timeout'] = self.default_combo_timeout_var.get()
             self.tracker.config['General']['default_display_time'] = self.default_display_time_var.get()
             self.tracker.config['General']['min_combo_count'] = self.min_combo_count_var.get()
             self.tracker.config['General']['allow_multiple_from_user'] = str(self.allow_multiple_var.get()).lower()
             
             # Save the config to file
+            logger.debug("Saving config to file")
             self.tracker.save_config()
             
             # Update tracker properties
+            logger.debug("Updating tracker properties")
             self.tracker.nickname = self.nick_var.get()
             self.tracker.token = self.token_var.get()
             self.tracker.channel = self.channel_var.get()
@@ -421,10 +469,19 @@ class SettingsTab:
             
             self.tracker.default_combo_timeout = int(self.default_combo_timeout_var.get())
             self.tracker.default_display_time = int(self.default_display_time_var.get())
-            self.tracker.min_combo_count = int(self.min_combo_count_var.get())
+            
+            # Ensure min_combo_count exists on the tracker object
+            if hasattr(self.tracker, 'min_combo_count'):
+                self.tracker.min_combo_count = int(self.min_combo_count_var.get())
+            else:
+                # If attribute doesn't exist, add it
+                logger.info("Adding min_combo_count attribute to tracker")
+                setattr(self.tracker, 'min_combo_count', int(self.min_combo_count_var.get()))
+                
             self.tracker.allow_multiple_from_user = self.allow_multiple_var.get()
             
             # Update component settings
+            logger.debug("Updating component settings")
             self.tracker.obs_manager.host = self.obs_host_var.get()
             self.tracker.obs_manager.port = int(self.obs_port_var.get())
             self.tracker.obs_manager.password = self.obs_password_var.get()
@@ -435,50 +492,78 @@ class SettingsTab:
                 volume=float(self.tts_volume_var.get())
             )
             
-            # Show success message
-            messagebox.showinfo("Settings Saved", "Settings have been saved successfully")
+            # Update overlay if it exists
+            try:
+                logger.debug("Updating overlay settings")
+                if hasattr(self.tracker, 'overlay_manager'):
+                    config = {
+                        'position': self.overlay_position_var.get(),
+                        'scale': float(self.overlay_scale_var.get()),
+                        'font': self.overlay_font_var.get(),
+                        'accentColor': self.ui_accent_var.get()
+                    }
+                    self.tracker.overlay_manager.update_overlay({'config': config, 'items': []})
+                    logger.debug("Overlay settings updated")
+            except Exception as e:
+                logger.warning(f"Error updating overlay: {e}")
+                # Non-critical, don't fail the settings save
             
-            # Update overlay with new settings
-            if hasattr(self.tracker, 'overlay_manager'):
-                config = {
-                    'position': self.overlay_position_var.get(),
-                    'scale': float(self.overlay_scale_var.get()),
-                    'font': self.overlay_font_var.get(),
-                    'accentColor': self.ui_accent_var.get()
-                }
-                self.tracker.overlay_manager.update_overlay({'config': config, 'items': []})
+            # Show success message
+            logger.info("Settings saved successfully")
+            messagebox.showinfo("Settings Saved", "Settings have been saved successfully")
                 
         except Exception as e:
             import traceback
-            traceback.print_exc()
+            logger.error(f"Failed to save settings: {e}")
+            logger.error(traceback.format_exc())
             messagebox.showerror("Error", f"Failed to save settings: {e}")
     
     def test_twitch_connection(self):
         """Test the Twitch connection."""
-        # Temporarily create a socket and attempt to connect
-        import socket
         try:
+            # Temporarily create a socket and attempt to connect
+            import socket
+            
+            logger.info("Testing Twitch connection")
             sock = socket.socket()
             sock.settimeout(5)  # Set a timeout for the connection attempt
+            
+            logger.debug("Connecting to Twitch IRC")
             sock.connect(('irc.chat.twitch.tv', 6667))
             
             # Try to authenticate
-            sock.send(f"PASS {self.token_var.get()}\n".encode('utf-8'))
-            sock.send(f"NICK {self.nick_var.get()}\n".encode('utf-8'))
+            nickname = self.nick_var.get()
+            token = self.token_var.get()
+            
+            if not nickname or not token:
+                messagebox.showerror("Twitch Connection", "Username and OAuth token are required")
+                logger.error("Missing username or token for Twitch test")
+                sock.close()
+                return
+                
+            logger.debug(f"Authenticating with username: {nickname}")
+            sock.send(f"PASS {token}\n".encode('utf-8'))
+            sock.send(f"NICK {nickname}\n".encode('utf-8'))
             
             # Wait for a response
+            logger.debug("Waiting for response")
             response = sock.recv(2048).decode('utf-8')
+            logger.debug(f"Response received: {response}")
             
             sock.close()
             
             if 'Welcome' in response or 'Your host is' in response:
+                logger.info("Successfully connected to Twitch")
                 messagebox.showinfo("Twitch Connection", "Successfully connected to Twitch!")
             elif 'Login authentication failed' in response:
+                logger.error("Twitch authentication failed")
                 messagebox.showerror("Twitch Connection", "Authentication failed. Please check your username and token.")
             else:
+                logger.warning(f"Unexpected Twitch response: {response}")
                 messagebox.showwarning("Twitch Connection", f"Connected but received unexpected response: {response}")
                 
         except Exception as e:
+            logger.error(f"Failed to connect to Twitch: {e}")
             messagebox.showerror("Twitch Connection", f"Failed to connect to Twitch: {e}")
     
     def test_obs_connection(self):
@@ -489,18 +574,24 @@ class SettingsTab:
             port = int(self.obs_port_var.get())
             password = self.obs_password_var.get()
             
+            logger.info(f"Testing OBS connection to {host}:{port}")
+            
             # Create a temporary OBS connection
             from obswebsocket import obsws
             
             obs = obsws(host, port, password)
+            logger.debug("Connecting to OBS")
             obs.connect()
             
             # If we get here, the connection worked
+            logger.debug("Disconnecting from OBS")
             obs.disconnect()
             
+            logger.info("Successfully connected to OBS")
             messagebox.showinfo("OBS Connection", "Successfully connected to OBS!")
             
         except Exception as e:
+            logger.error(f"Failed to connect to OBS: {e}")
             messagebox.showerror("OBS Connection", f"Failed to connect to OBS: {e}")
     
     def test_tts(self):
@@ -511,22 +602,29 @@ class SettingsTab:
             rate = int(self.tts_rate_var.get())
             volume = float(self.tts_volume_var.get())
             
+            logger.info(f"Testing TTS with enabled={enabled}, rate={rate}, volume={volume}")
+            
             if not enabled:
+                logger.warning("TTS is disabled")
                 messagebox.showwarning("TTS Test", "TTS is currently disabled. Enable it to test.")
                 return
             
             # Create a temporary TTS engine with the current settings
             import pyttsx3
             
+            logger.debug("Initializing TTS engine")
             engine = pyttsx3.init()
             engine.setProperty('rate', rate)
             engine.setProperty('volume', volume)
             
             # Speak a test message
+            logger.debug("Speaking test message")
             engine.say("This is a test of the Text to Speech engine")
             engine.runAndWait()
             
+            logger.info("TTS test completed")
             messagebox.showinfo("TTS Test", "TTS test completed")
             
         except Exception as e:
+            logger.error(f"Failed to test TTS: {e}")
             messagebox.showerror("TTS Test", f"Failed to test TTS: {e}")
