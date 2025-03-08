@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "text": "test",
+      "combo": 3,
+      "is_emote": false,
+      "emote_id": null,
+      "emote_url": null,
+      "expires": 1741439602070,
+      "contributors": [
+        "zambied"
+      ]
+    },
+    {
+      "text": "test2",
+      "combo": 1,
+      "is_emote": false,
+      "emote_id": null,
+      "emote_url": null,
+      "expires": 1741439600258,
+      "contributors": [
+        "zambied"
+      ]
+    }
+  ]
+}

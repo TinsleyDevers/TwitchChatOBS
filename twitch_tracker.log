@@ -1,0 +1,25 @@
+2025-03-08 07:12:25,942 - TwitchTracker - INFO - Logging initialized to C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\twitch_tracker.log
+2025-03-08 07:12:25,943 - TwitchTracker - INFO - Starting TwitchTracker
+2025-03-08 07:12:26,116 - TwitchTracker.AudioManager - INFO - Pygame audio initialized
+2025-03-08 07:12:26,320 - TwitchTracker.AudioManager - INFO - TTS engine initialized
+2025-03-08 07:12:26,321 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 07:12:26,325 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 07:12:26,325 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 07:12:26,327 - TwitchTracker.HTMLGenerator - INFO - Created HTML overlay at C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 07:12:26,327 - TwitchTracker - INFO - HTML overlay created at: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 07:12:26,328 - TwitchTracker - INFO - Initializing GUI
+2025-03-08 07:12:29,369 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 07:12:29,376 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 07:12:29,377 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 07:12:29,532 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:12:29,560 - TwitchTracker.BTTVProvider - INFO - Loaded 65 BTTV emotes
+2025-03-08 07:12:29,976 - TwitchTracker.FFZProvider - INFO - Loaded 47 FFZ emotes
+2025-03-08 07:12:30,222 - TwitchTracker.SevenTVProvider - ERROR - Error fetching 7TV emotes: 410 Client Error: Gone for url: https://api.7tv.app/v2/emotes/global
+2025-03-08 07:12:30,226 - TwitchTracker - INFO - Emotes list saved
+2025-03-08 07:12:30,226 - TwitchTracker - INFO - Loaded 110 emotes from all providers
+2025-03-08 07:26:11,736 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 07:26:11,737 - TwitchTracker - ERROR - Error in chat listener: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-03-08 07:26:11,738 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 07:26:11,739 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 07:26:11,907 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:26:13,132 - TwitchTracker - INFO - GUI closed
