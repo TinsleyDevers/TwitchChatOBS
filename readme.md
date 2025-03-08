@@ -1,7 +1,7 @@
 # Twitch Emote/Word Tracker
 
 A desktop application to track, count, and display emotes and words from Twitch chat. Create an engaging stream overlay that shows combo counts, statistics, and more!
-
+(HEAVILY INSPIRED BY CHARBORGS STREAMS)
 ## Features
 
 - Track emotes and words from Twitch chat in real-time
