@@ -23,3 +23,168 @@
 2025-03-08 07:26:11,739 - TwitchTracker - INFO - Twitch Tracker stopped
 2025-03-08 07:26:11,907 - TwitchTracker - INFO - Connected to Twitch channel #zambied
 2025-03-08 07:26:13,132 - TwitchTracker - INFO - GUI closed
+2025-03-08 07:28:11,698 - TwitchTracker - INFO - Logging initialized to C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\twitch_tracker.log
+2025-03-08 07:28:11,699 - TwitchTracker - INFO - Starting TwitchTracker
+2025-03-08 07:28:11,919 - TwitchTracker.AudioManager - INFO - Pygame audio initialized
+2025-03-08 07:28:12,144 - TwitchTracker.AudioManager - INFO - TTS engine initialized
+2025-03-08 07:28:12,145 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 07:28:12,149 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 07:28:12,150 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 07:28:12,152 - TwitchTracker.HTMLGenerator - INFO - Created HTML overlay at C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 07:28:12,153 - TwitchTracker - INFO - HTML overlay created at: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 07:28:12,154 - TwitchTracker - INFO - Initializing GUI
+2025-03-08 07:28:16,760 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 07:28:16,768 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 07:28:16,769 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 07:28:16,912 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:28:16,980 - TwitchTracker.BTTVProvider - INFO - Loaded 65 BTTV emotes
+2025-03-08 07:28:17,393 - TwitchTracker.FFZProvider - INFO - Loaded 47 FFZ emotes
+2025-03-08 07:28:17,649 - TwitchTracker.SevenTVProvider - ERROR - Error fetching 7TV emotes: 410 Client Error: Gone for url: https://api.7tv.app/v2/emotes/global
+2025-03-08 07:28:17,650 - TwitchTracker - INFO - Emotes list saved
+2025-03-08 07:28:17,650 - TwitchTracker - INFO - Loaded 110 emotes from all providers
+2025-03-08 07:30:43,427 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 07:30:43,428 - TwitchTracker - ERROR - Error in chat listener: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-03-08 07:30:43,429 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 07:30:43,429 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 07:30:43,599 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:30:44,481 - TwitchTracker - INFO - GUI closed
+2025-03-08 07:30:49,417 - TwitchTracker - INFO - Logging initialized to C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\twitch_tracker.log
+2025-03-08 07:30:49,418 - TwitchTracker - INFO - Starting TwitchTracker
+2025-03-08 07:30:49,627 - TwitchTracker.AudioManager - INFO - Pygame audio initialized
+2025-03-08 07:30:49,803 - TwitchTracker.AudioManager - INFO - TTS engine initialized
+2025-03-08 07:30:49,803 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 07:30:49,807 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 07:30:49,807 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 07:30:49,808 - TwitchTracker.HTMLGenerator - INFO - Created HTML overlay at C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 07:30:49,809 - TwitchTracker - INFO - HTML overlay created at: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 07:30:49,809 - TwitchTracker - INFO - Initializing GUI
+2025-03-08 07:30:56,839 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 07:30:56,846 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 07:30:56,847 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 07:30:56,943 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:30:57,022 - TwitchTracker.BTTVProvider - INFO - Loaded 65 BTTV emotes
+2025-03-08 07:30:57,454 - TwitchTracker.FFZProvider - INFO - Loaded 47 FFZ emotes
+2025-03-08 07:30:57,671 - TwitchTracker.SevenTVProvider - ERROR - Error fetching 7TV emotes: 410 Client Error: Gone for url: https://api.7tv.app/v2/emotes/global
+2025-03-08 07:30:57,673 - TwitchTracker - INFO - Emotes list saved
+2025-03-08 07:30:57,673 - TwitchTracker - INFO - Loaded 110 emotes from all providers
+2025-03-08 07:33:58,417 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 07:33:58,418 - TwitchTracker - ERROR - Error in chat listener: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-03-08 07:33:58,419 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 07:33:58,419 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 07:33:58,569 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:33:59,474 - TwitchTracker - INFO - GUI closed
+2025-03-08 07:34:02,932 - TwitchTracker - INFO - Logging initialized to C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\twitch_tracker.log
+2025-03-08 07:34:02,933 - TwitchTracker - INFO - Starting TwitchTracker
+2025-03-08 07:34:03,103 - TwitchTracker.AudioManager - INFO - Pygame audio initialized
+2025-03-08 07:34:03,302 - TwitchTracker.AudioManager - INFO - TTS engine initialized
+2025-03-08 07:34:03,302 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 07:34:03,306 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 07:34:03,306 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 07:34:03,307 - TwitchTracker.HTMLGenerator - INFO - Created HTML overlay at C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 07:34:03,308 - TwitchTracker - INFO - HTML overlay created at: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 07:34:03,308 - TwitchTracker - INFO - Initializing GUI
+2025-03-08 07:34:24,121 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 07:34:24,127 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 07:34:24,129 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 07:34:24,308 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:34:24,386 - TwitchTracker.BTTVProvider - INFO - Loaded 65 BTTV emotes
+2025-03-08 07:34:25,147 - TwitchTracker.FFZProvider - INFO - Loaded 47 FFZ emotes
+2025-03-08 07:34:25,544 - TwitchTracker.SevenTVProvider - ERROR - Error fetching 7TV emotes: 410 Client Error: Gone for url: https://api.7tv.app/v2/emotes/global
+2025-03-08 07:34:25,547 - TwitchTracker - INFO - Emotes list saved
+2025-03-08 07:34:25,547 - TwitchTracker - INFO - Loaded 110 emotes from all providers
+2025-03-08 07:35:13,367 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 07:35:13,368 - TwitchTracker - ERROR - Error in chat listener: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-03-08 07:35:13,369 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 07:35:13,370 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 07:35:13,519 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:35:14,428 - TwitchTracker - INFO - GUI closed
+2025-03-08 07:38:18,993 - TwitchTracker - INFO - Logging initialized to C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\twitch_tracker.log
+2025-03-08 07:38:18,994 - TwitchTracker - INFO - Starting TwitchTracker
+2025-03-08 07:38:18,996 - TwitchTracker.LocalServer - INFO - Started local server at http://localhost:8000
+2025-03-08 07:38:18,997 - TwitchTracker - INFO - Started local server at http://localhost:8000
+2025-03-08 07:38:19,204 - TwitchTracker.AudioManager - INFO - Pygame audio initialized
+2025-03-08 07:38:19,384 - TwitchTracker.AudioManager - INFO - TTS engine initialized
+2025-03-08 07:38:19,385 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 07:38:19,388 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 07:38:19,388 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 07:38:19,389 - TwitchTracker.HTMLGenerator - INFO - Created HTML overlay at C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 07:38:19,390 - TwitchTracker - INFO - HTML overlay created at: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 07:38:19,390 - TwitchTracker - INFO - Initializing GUI
+2025-03-08 07:40:06,219 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 07:40:06,225 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 07:40:06,227 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 07:40:06,478 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:40:06,537 - TwitchTracker.BTTVProvider - INFO - Loaded 65 BTTV emotes
+2025-03-08 07:40:07,011 - TwitchTracker.FFZProvider - INFO - Loaded 47 FFZ emotes
+2025-03-08 07:40:07,255 - TwitchTracker.SevenTVProvider - ERROR - Error fetching 7TV emotes: 410 Client Error: Gone for url: https://api.7tv.app/v2/emotes/global
+2025-03-08 07:40:07,257 - TwitchTracker - INFO - Emotes list saved
+2025-03-08 07:40:07,258 - TwitchTracker - INFO - Loaded 110 emotes from all providers
+2025-03-08 07:41:02,315 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 07:41:02,316 - TwitchTracker - ERROR - Error in chat listener: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-03-08 07:41:02,317 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 07:41:02,317 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 07:41:02,405 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:41:03,235 - TwitchTracker - INFO - GUI closed
+2025-03-08 07:41:54,299 - TwitchTracker - INFO - Logging initialized to C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\twitch_tracker.log
+2025-03-08 07:41:54,300 - TwitchTracker - INFO - Starting TwitchTracker
+2025-03-08 07:41:54,300 - TwitchTracker.LocalServer - INFO - Starting server from directory: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS
+2025-03-08 07:41:54,301 - TwitchTracker.LocalServer - INFO - Static files located in: static
+2025-03-08 07:41:54,303 - TwitchTracker.LocalServer - INFO - Started local server at http://localhost:8000
+2025-03-08 07:41:54,303 - TwitchTracker - INFO - Started local server at http://localhost:8000/static
+2025-03-08 07:41:54,480 - TwitchTracker.AudioManager - INFO - Pygame audio initialized
+2025-03-08 07:41:54,666 - TwitchTracker.AudioManager - INFO - TTS engine initialized
+2025-03-08 07:41:54,667 - TwitchTracker.AudioManager - INFO - TTS configured: enabled=True, rate=150, volume=0.8
+2025-03-08 07:41:54,670 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 07:41:54,671 - TwitchTracker - INFO - TwitchTracker initialized
+2025-03-08 07:41:54,672 - TwitchTracker.HTMLGenerator - INFO - Created HTML overlay at C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 07:41:54,672 - TwitchTracker - INFO - HTML overlay created at: C:\Users\tinsl\OneDrive\Documents\GitHub\TinsleyOBS\static\overlay.html
+2025-03-08 07:41:54,673 - TwitchTracker - INFO - Initializing GUI
+2025-03-08 07:42:01,097 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 07:42:01,103 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 07:42:01,105 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 07:42:01,265 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:42:01,321 - TwitchTracker.BTTVProvider - INFO - Loaded 65 BTTV emotes
+2025-03-08 07:42:01,718 - TwitchTracker.FFZProvider - INFO - Loaded 47 FFZ emotes
+2025-03-08 07:42:01,908 - TwitchTracker.SevenTVProvider - ERROR - Error fetching 7TV emotes: 410 Client Error: Gone for url: https://api.7tv.app/v2/emotes/global
+2025-03-08 07:42:01,910 - TwitchTracker - INFO - Emotes list saved
+2025-03-08 07:42:01,910 - TwitchTracker - INFO - Loaded 110 emotes from all providers
+2025-03-08 07:44:06,167 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 07:44:06,168 - TwitchTracker - ERROR - Error in chat listener: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-03-08 07:44:06,169 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 07:44:06,170 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 07:44:06,333 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:44:53,680 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 07:44:53,686 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 07:44:53,688 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 07:44:53,690 - TwitchTracker - INFO - Speaking text: 'test', TTS enabled: True
+2025-03-08 07:44:53,691 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'test'
+2025-03-08 07:44:53,691 - TwitchTracker - INFO - TTS result: True
+2025-03-08 07:44:53,694 - TwitchTracker - INFO - Speaking text: 'test', TTS enabled: True
+2025-03-08 07:44:53,696 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'test'
+2025-03-08 07:44:53,696 - TwitchTracker - INFO - TTS result: True
+2025-03-08 07:44:53,696 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 07:44:53,698 - TwitchTracker - INFO - Speaking text: 'test2', TTS enabled: True
+2025-03-08 07:44:53,699 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: 'test2'
+2025-03-08 07:44:53,699 - TwitchTracker - INFO - TTS result: True
+2025-03-08 07:44:53,700 - TwitchTracker.AudioManager - ERROR - Error in TTS thread: run loop already started
+2025-03-08 07:44:53,782 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:44:55,146 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 07:45:17,964 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 07:45:17,965 - TwitchTracker - ERROR - Error in chat listener: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-03-08 07:45:17,966 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 07:45:17,966 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 07:45:18,114 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:45:34,334 - TwitchTracker.ComboManager - INFO - ComboManager started
+2025-03-08 07:45:34,337 - TwitchTracker.OBSUtils - INFO - Connected to OBS WebSocket
+2025-03-08 07:45:34,338 - TwitchTracker - INFO - Twitch Tracker started
+2025-03-08 07:45:34,340 - TwitchTracker - INFO - Speaking text: '121', TTS enabled: True
+2025-03-08 07:45:34,341 - TwitchTracker.AudioManager - INFO - TTS thread starting for text: '121'
+2025-03-08 07:45:34,341 - TwitchTracker - INFO - TTS result: True
+2025-03-08 07:45:34,436 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:45:37,020 - TwitchTracker.AudioManager - INFO - TTS completed successfully
+2025-03-08 07:47:09,983 - TwitchTracker.ComboManager - INFO - ComboManager stopped
+2025-03-08 07:47:09,984 - TwitchTracker - ERROR - Error in chat listener: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-03-08 07:47:09,985 - TwitchTracker.OBSUtils - INFO - Disconnected from OBS WebSocket
+2025-03-08 07:47:09,985 - TwitchTracker - INFO - Twitch Tracker stopped
+2025-03-08 07:47:10,113 - TwitchTracker - INFO - Connected to Twitch channel #zambied
+2025-03-08 07:47:10,735 - TwitchTracker - INFO - GUI closed

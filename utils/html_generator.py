@@ -3,23 +3,52 @@ HTML overlay generator for the Twitch Tracker application.
 """
 import os
 import logging
-from typing import Dict, Any, Optional
 
 logger = logging.getLogger("TwitchTracker.HTMLGenerator")
 
 
-def create_html_overlay(output_path: str) -> bool:
+def create_html_overlay(output_path: str, server_url: str = None) -> bool:
     """
     Create an HTML overlay file for OBS browser source.
     
     Args:
         output_path: Path where the HTML file should be saved
+        server_url: Optional URL of the local server (for fetch requests)
         
     Returns:
         bool: True if successful, False otherwise
     """
     try:
-        html_content = """<!DOCTYPE html>
+        # Get the HTML content
+        html_content = get_html_overlay_content(server_url)
+        
+        # Create directory if needed
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        
+        # Write the HTML file
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(html_content)
+        
+        logger.info(f"Created HTML overlay at {output_path}")
+        return True
+    
+    except Exception as e:
+        logger.error(f"Failed to create HTML overlay: {e}")
+        return False
+
+
+def get_html_overlay_content(server_url: str = None) -> str:
+    """
+    Get the HTML content for the overlay.
+    
+    Args:
+        server_url: Optional URL of the local server (for fetch requests)
+        
+    Returns:
+        str: HTML content
+    """
+    # Start with standard HTML
+    html_content = """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -379,63 +408,115 @@ def create_html_overlay(output_path: str) -> bool:
                             }
                             delete activeItems[child.id];
                         }, 500);
+                    }
                 }
             });
         }
         
+        // Replace the cleanupExpiredItems function in html_generator.py with this code:
+
         function cleanupExpiredItems() {
             const now = Date.now();
-            const itemsToRemove = [];
             
-            for (const [id, info] of Object.entries(activeItems)) {
-                if (info.expires && now > info.expires) {
-                    debug(`Item ${id} expired, removing`);
-                    itemsToRemove.push(id);
-                }
-            }
-            
-            // Process removals after we're done iterating
-            itemsToRemove.forEach(id => {
-                const element = document.getElementById(id);
-                if (element) {
-                    // Add fade-out animation then remove
-                    element.style.transition = 'opacity 0.5s ease';
-                    element.style.opacity = '0';
+            Object.entries(activeItems).forEach(([id, info]) => {
+                // Only process items that have an expiration time, aren't already being removed,
+                // and have passed their expiration time
+                if (info.expires && !info.removing && now > info.expires) {
+                    debug(`Item ${id} expired at ${new Date(info.expires).toTimeString()}, current time: ${new Date(now).toTimeString()}`);
                     
-                    // Set a flag so we don't try to remove it again
+                    // Mark the item as being removed so we don't try to remove it again
                     activeItems[id].removing = true;
                     
-                    setTimeout(() => {
-                        if (element.parentNode) {
-                            container.removeChild(element);
-                        }
+                    const element = document.getElementById(id);
+                    if (element) {
+                        // Add fade-out animation then remove
+                        element.style.transition = 'opacity 0.5s ease';
+                        element.style.opacity = '0';
+                        
+                        setTimeout(() => {
+                            try {
+                                if (element.parentNode) {
+                                    container.removeChild(element);
+                                    debug(`Removed element ${id} from DOM`);
+                                }
+                            } catch (err) {
+                                debug(`Error removing element: ${err.message}`);
+                            } finally {
+                                // Always remove from tracking, even if DOM removal fails
+                                delete activeItems[id];
+                                debug(`Removed ${id} from tracking`);
+                            }
+                        }, 500);
+                    } else {
+                        // If element doesn't exist, just remove from tracking
                         delete activeItems[id];
-                    }, 500);
-                } else {
-                    delete activeItems[id];
+                        debug(`No DOM element for ${id}, removed from tracking only`);
+                    }
                 }
             });
         }
         
-        // Function to load data with error handling
+        // Function to load data with error handling"""
+        
+    # Insert the server-specific fetch code
+    fetch_code = """
         function loadData() {
             const cacheBuster = `?t=${Date.now()}`;
-            fetch(`overlay_data.json${cacheBuster}`)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error ${response.status}`);
+            const xhr = new XMLHttpRequest();
+            xhr.overrideMimeType("application/json");
+            xhr.open('GET', `overlay_data.json${cacheBuster}`, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        try {
+                            const data = JSON.parse(xhr.responseText);
+                            debug("Fetched new data successfully");
+                            updateDisplay(data);
+                            cleanupExpiredItems();
+                        } catch (error) {
+                            debug(`Error parsing JSON: ${error.message}`);
+                        }
+                    } else {
+                        debug(`Error fetching data: Status ${xhr.status}`);
                     }
+                }
+            };
+            xhr.send(null);
+        }
+    """
+    
+    # If we have a server URL, modify the fetch code to use that URL
+    if server_url:
+        # The JSON data will still be in the static folder, so we need to use the correct path
+        fetch_code = f"""
+        function loadData() {{
+            const cacheBuster = `?t=${{Date.now()}}`;
+            fetch(`{server_url.rstrip('/')}/overlay_data.json${{cacheBuster}}`)
+                .then(response => {{
+                    if (!response.ok) {{
+                        throw new Error(`HTTP error ${{response.status}}`);
+                    }}
                     return response.json();
-                })
-                .then(data => {
+                }})
+                .then(data => {{
                     debug("Fetched new data successfully");
                     updateDisplay(data);
                     cleanupExpiredItems();
-                })
-                .catch(error => {
-                    debug(`Error fetching data: ${error.message}`);
-                });
-        }
+                }})
+                .catch(error => {{
+                    debug(`Error fetching data: ${{error.message}}`);
+                    // Try to enable debug mode on error
+                    if (!debugMode) {{
+                        debugMode = true;
+                        debugElement.style.display = 'block';
+                        debug("Debug mode enabled automatically due to error");
+                    }}
+                }});
+        }}
+        """
+    
+    # Complete the HTML
+    html_content += fetch_code + """
         
         // Apply initial config
         applyConfig(config);
@@ -450,17 +531,5 @@ def create_html_overlay(output_path: str) -> bool:
 </body>
 </html>
 """
-        
-        # Create directory if needed
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
-        
-        # Write the HTML file
-        with open(output_path, 'w', encoding='utf-8') as f:
-            f.write(html_content)
-        
-        logger.info(f"Created HTML overlay at {output_path}")
-        return True
     
-    except Exception as e:
-        logger.error(f"Failed to create HTML overlay: {e}")
-        return False
+    return html_content

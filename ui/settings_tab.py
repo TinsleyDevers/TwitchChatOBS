@@ -103,6 +103,7 @@ class SettingsTab:
         # Combo settings
         self.default_combo_timeout_var = tk.StringVar(value=self.tracker.config.get('General', 'default_combo_timeout', fallback='10'))
         self.default_display_time_var = tk.StringVar(value=self.tracker.config.get('General', 'default_display_time', fallback='5'))
+        self.min_combo_count_var = tk.StringVar(value=self.tracker.config.get('General', 'min_combo_count', fallback='1'))
         self.allow_multiple_var = tk.BooleanVar(value=self.tracker.config.getboolean('General', 'allow_multiple_from_user', fallback=True))
     
     def _create_twitch_settings(self):
@@ -305,14 +306,19 @@ class SettingsTab:
         display_spin = ttk.Spinbox(combo_grid, from_=1, to=60, textvariable=self.default_display_time_var)
         display_spin.grid(row=1, column=1, sticky='ew', padx=5, pady=5)
         
+        # Minimum combo count for display
+        ttk.Label(combo_grid, text="Minimum Combo Count to Display:").grid(row=2, column=0, sticky='w', padx=5, pady=5)
+        min_combo_spin = ttk.Spinbox(combo_grid, from_=1, to=20, textvariable=self.min_combo_count_var)
+        min_combo_spin.grid(row=2, column=1, sticky='ew', padx=5, pady=5)
+        
         # Allow multiple from user
         ttk.Checkbutton(combo_grid, text="Allow multiple contributions from same user", 
-                       variable=self.allow_multiple_var).grid(row=2, column=0, columnspan=2, sticky='w', padx=5, pady=5)
+                       variable=self.allow_multiple_var).grid(row=3, column=0, columnspan=2, sticky='w', padx=5, pady=5)
         
         # Help info
-        help_text = "Combo Timeout: Maximum time between occurrences to count as a combo\nDisplay Time: How long to show each item in the overlay"
+        help_text = "Combo Timeout: Maximum time between occurrences to count as a combo\nDisplay Time: How long to show each item in the overlay\nMinimum Combo: Minimum combo count before showing in overlay"
         help_label = ttk.Label(combo_grid, text=help_text, wraplength=300, justify='left')
-        help_label.grid(row=3, column=0, columnspan=2, sticky='w', padx=5, pady=5)
+        help_label.grid(row=4, column=0, columnspan=2, sticky='w', padx=5, pady=5)
         
         # Set column weights
         combo_grid.columnconfigure(1, weight=1)
@@ -320,10 +326,14 @@ class SettingsTab:
     def save_settings(self):
         """Save settings to configuration."""
         try:
+            import logging
+            logger = logging.getLogger("TwitchTracker.SettingsTab")
+            logger.info("Starting to save settings")
             # Validate input values
             # Port should be a number
             try:
                 port = int(self.obs_port_var.get())
+                logger.info(f"OBS port validated: {port}")
             except ValueError:
                 messagebox.showerror("Invalid Input", "OBS port must be a number")
                 return
@@ -357,6 +367,16 @@ class SettingsTab:
             except ValueError:
                 messagebox.showerror("Invalid Input", "Overlay scale must be a number")
                 return
+
+            # Min combo count should be a positive integer
+            try:
+                min_combo = int(self.min_combo_count_var.get())
+                if min_combo < 1:
+                    messagebox.showerror("Invalid Input", "Minimum combo count must be at least 1")
+                    return
+            except ValueError:
+                messagebox.showerror("Invalid Input", "Minimum combo count must be a number")
+                return
                 
             # Update Twitch settings
             self.tracker.config['Twitch']['nickname'] = self.nick_var.get()
@@ -387,6 +407,7 @@ class SettingsTab:
             # Update Combo settings
             self.tracker.config['General']['default_combo_timeout'] = self.default_combo_timeout_var.get()
             self.tracker.config['General']['default_display_time'] = self.default_display_time_var.get()
+            self.tracker.config['General']['min_combo_count'] = self.min_combo_count_var.get()
             self.tracker.config['General']['allow_multiple_from_user'] = str(self.allow_multiple_var.get()).lower()
             
             # Save the config to file
@@ -400,6 +421,7 @@ class SettingsTab:
             
             self.tracker.default_combo_timeout = int(self.default_combo_timeout_var.get())
             self.tracker.default_display_time = int(self.default_display_time_var.get())
+            self.tracker.min_combo_count = int(self.min_combo_count_var.get())
             self.tracker.allow_multiple_from_user = self.allow_multiple_var.get()
             
             # Update component settings

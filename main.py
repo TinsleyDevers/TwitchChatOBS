@@ -5,6 +5,7 @@ import os
 import sys
 import logging
 from utils.logging_setup import setup_logging
+from utils.local_server import start_local_server
 from core.tracker import TwitchTracker
 from ui.main_window import TwitchTrackerGUI
 from utils.html_generator import create_html_overlay
@@ -19,21 +20,34 @@ def main():
         
         logger.info("Starting TwitchTracker")
         
+        # Create static directory if it doesn't exist
+        static_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
+        os.makedirs(static_dir, exist_ok=True)
+        
+        # Start local HTTP server for overlay
+        server_url, server_thread = start_local_server(static_dir)
+        if server_url:
+            logger.info(f"Started local server at {server_url}")
+        else:
+            logger.warning("Failed to start local server, overlay may not work in browser")
+        
         # Initialize tracker
         config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.ini")
         tracker = TwitchTracker(config_path)
         logger.info("TwitchTracker initialized")
         
-        # Create static directory if it doesn't exist
-        static_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
-        os.makedirs(static_dir, exist_ok=True)
-        
         # Create HTML overlay
         html_path = os.path.join(static_dir, "overlay.html")
-        if create_html_overlay(html_path):
+        if create_html_overlay(html_path, server_url):
             logger.info(f"HTML overlay created at: {html_path}")
             print(f"HTML overlay created at: {html_path}")
-            print("Add this as a Browser Source in OBS with 'Local file' checked")
+            
+            if server_url:
+                browser_url = f"{server_url.rstrip('/')}/overlay.html"
+                print(f"Overlay available at: {browser_url}")
+                print("Add this URL as a Browser Source in OBS")
+            else:
+                print("Add this file as a Browser Source in OBS with 'Local file' checked")
         
         # Start GUI
         logger.info("Initializing GUI")
