@@ -22,12 +22,14 @@ A desktop application to track, count, and display emotes and words from Twitch 
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/yourusername/twitch-emote-tracker.git
    cd twitch-emote-tracker
    ```
 
 2. Install dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -39,7 +41,7 @@ A desktop application to track, count, and display emotes and words from Twitch 
 
 ## Configuration
 
-On first run, the application will create a default `config.ini` file. Edit this file to configure:
+On first run, the application will create a default `config.ini` file. Edit this file or use the settings dashboard to configure:
 
 - Twitch connection settings (bot username, token, channel)
 - OBS WebSocket settings (if using OBS integration)
@@ -52,8 +54,8 @@ On first run, the application will create a default `config.ini` file. Edit this
 You'll need to create a Twitch account for your bot and get an OAuth token:
 
 1. Create a new Twitch account for your bot
-2. Get an OAuth token from [https://twitchapps.com/tmi/](https://twitchapps.com/tmi/)
-3. Enter the token in the config.ini file
+2. Get an OAuth token from [https://twitchtokengenerator.com/](https://twitchtokengenerator.com/)
+3. Enter the token in the settings tab
 
 ### Using the OBS Overlay
 
@@ -83,7 +85,7 @@ twitch_tracker/
 │   ├── provider_base.py        # Base emote provider class
 │   ├── twitch_provider.py      # Twitch emote provider
 │   ├── bttv_provider.py        # BTTV emote provider
-│   ├── ffz_provider.py         # FrankerFaceZ emote provider 
+│   ├── ffz_provider.py         # FrankerFaceZ emote provider
 │   └── seventv_provider.py     # 7TV emote provider
 │
 ├── ui/                         # User Interface

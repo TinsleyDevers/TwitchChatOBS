@@ -10,7 +10,7 @@ import threading
 import logging
 import configparser
 import json
-from queue import Queue
+from queue import Queue, Empty  # Fixed import to use Empty from queue
 from typing import Dict, Set, List, Tuple, Optional, Any
 from collections import Counter
 
@@ -448,6 +448,32 @@ class TwitchTracker:
         # Extract individual words
         words = message.strip().split()
         
+        # MODIFIED: Check if this is a single-word message or contains repeated words
+        if len(words) == 1:
+            # For single-word messages, process normally
+            self._process_word(words[0], username, emote_data, message)
+        else:
+            # For multi-word messages, only process repeated words
+            word_counts = Counter(words)
+            for word, count in word_counts.items():
+                if count > 1:  # Only process words that appear multiple times
+                    # Process this word once for the entire message
+                    self._process_word(word, username, emote_data, message)
+    
+    def _process_word(self, word: str, username: str, emote_data: Optional[str] = None, full_message: str = "") -> None:
+        """
+        Process a single word or emote.
+        
+        Args:
+            word: The word to process
+            username: The username of the sender
+            emote_data: Optional emote data from Twitch tags
+            full_message: Original full message for context
+        """
+        # Skip common articles, prepositions, etc.
+        if len(word) <= 2 or word.lower() in {'the', 'and', 'or', 'but', 'for', 'not', 'with'}:
+            return
+        
         # Extract emote IDs if available
         emote_map = {}
         if emote_data and emote_data != '':
@@ -469,101 +495,96 @@ class TwitchTracker:
                             continue
                         try:
                             start, end = int(start_end[0]), int(start_end[1])
-                            if start < len(message) and end < len(message):
-                                word = message[start:end+1]
-                                emote_map[word] = {"id": emote_id, "type": "twitch"}
+                            if start < len(full_message) and end < len(full_message):
+                                extracted_word = full_message[start:end+1]
+                                emote_map[extracted_word] = {"id": emote_id, "type": "twitch"}
                                 
                                 # Add to known emotes automatically
-                                if word not in self.known_emotes:
-                                    self.known_emotes.add(word)
+                                if extracted_word not in self.known_emotes:
+                                    self.known_emotes.add(extracted_word)
                                     # Create default config if not exists
-                                    if word not in self.emote_configs:
-                                        self.emote_configs[word] = EmoteConfig(is_emote=True)
+                                    if extracted_word not in self.emote_configs:
+                                        self.emote_configs[extracted_word] = EmoteConfig(is_emote=True)
                         except (ValueError, IndexError) as e:
                             logger.error(f"Error parsing emote position {pos}: {e}")
             except Exception as e:
                 logger.error(f"Error parsing emote data {emote_data}: {e}")
         
-        for word in words:
-            # Skip common articles, prepositions, etc.
-            if len(word) <= 2 or word.lower() in {'the', 'and', 'or', 'but', 'for', 'not', 'with'}:
-                continue
-                            
-            # Determine if this is an emote and get its details
-            is_emote = False
-            emote_id = None
-            emote_url = None
-            emote_type = None
+        # Determine if this is an emote and get its details
+        is_emote = False
+        emote_id = None
+        emote_url = None
+        emote_type = None
+        
+        # Check if it's a Twitch emote from emote_map
+        if word in emote_map:
+            is_emote = True
+            emote_id = emote_map[word]["id"]
+            emote_type = "twitch"
+            emote_url = self.twitch_emotes.get_emote_url(emote_id)
             
-            # Check if it's a Twitch emote from emote_map
-            if word in emote_map:
-                is_emote = True
-                emote_id = emote_map[word]["id"]
-                emote_type = "twitch"
-                emote_url = self.twitch_emotes.get_emote_url(emote_id)
+            # Ensure it's in known emotes
+            if word not in self.known_emotes:
+                self.known_emotes.add(word)
+                if word not in self.emote_configs:
+                    self.emote_configs[word] = EmoteConfig(is_emote=True)
+        # Check if it's in our known emotes dictionary
+        elif word in self.all_emotes:
+            is_emote = True
+            emote_data = self.all_emotes[word]
+            emote_id = emote_data.get('id')
+            emote_type = emote_data.get('type')
+            if 'url' in emote_data:
+                emote_url = emote_data['url']
+        # Check if it's in our known emotes set
+        elif word in self.known_emotes:
+            is_emote = True
+        
+        # Get emote URL if needed
+        if is_emote and not emote_url and emote_id:
+            emote_url = self.get_emote_url(word, emote_id, emote_type)
+            logger.debug(f"Got emote URL for {word}: {emote_url}")
+        
+        # Download emote if it's an emote with URL
+        if is_emote and emote_url:
+            # Try to download the emote
+            if emote_id:
+                # Use asyncio to download in background
+                download_future = asyncio.run_coroutine_threadsafe(
+                    self.download_emote(emote_id, emote_url, emote_type or "twitch"),
+                    self.loop
+                )
                 
-                # Ensure it's in known emotes
-                if word not in self.known_emotes:
-                    self.known_emotes.add(word)
-                    if word not in self.emote_configs:
-                        self.emote_configs[word] = EmoteConfig(is_emote=True)
-            # Check if it's in our known emotes dictionary
-            elif word in self.all_emotes:
-                is_emote = True
-                emote_data = self.all_emotes[word]
-                emote_id = emote_data.get('id')
-                emote_type = emote_data.get('type')
-                if 'url' in emote_data:
-                    emote_url = emote_data['url']
-            # Check if it's in our known emotes set
-            elif word in self.known_emotes:
-                is_emote = True
-            
-            # Get emote URL if needed
-            if is_emote and not emote_url and emote_id:
-                emote_url = self.get_emote_url(word, emote_id, emote_type)
-                logger.debug(f"Got emote URL for {word}: {emote_url}")
-            
-            # Download emote if it's an emote with URL
-            if is_emote and emote_url:
-                # Try to download the emote
-                if emote_id:
-                    # Use asyncio to download in background
-                    download_future = asyncio.run_coroutine_threadsafe(
-                        self.download_emote(emote_id, emote_url, emote_type or "twitch"),
-                        self.loop
-                    )
-                    
-                    try:
-                        # Wait for a short time (non-blocking)
-                        local_path = download_future.result(0.5)
-                        if local_path:
-                            logger.info(f"Downloaded emote {word} to {local_path}")
-                            # Could use local file, but sticking with URLs for browser compatibility
-                    except Exception as e:
-                        logger.error(f"Error downloading emote {word}: {e}")
-            
-            # Add or update combo
-            config = self.emote_configs.get(word)
-            combo_count, is_new = self.combo_manager.add_or_update_combo(
-                word, 
-                username, 
-                is_emote=is_emote, 
-                emote_id=emote_id, 
-                emote_url=emote_url,
-                config=config
-            )
-            
-            # Add to message queue for processing
-            self.message_queue.put({
-                "word": word,
-                "combo": combo_count,
-                "is_emote": is_emote,
-                "emote_id": emote_id,
-                "emote_url": emote_url,
-                "custom_audio": config.custom_audio if config else None,
-                "username": username
-            })
+                try:
+                    # Wait for a short time (non-blocking)
+                    local_path = download_future.result(0.5)
+                    if local_path:
+                        logger.info(f"Downloaded emote {word} to {local_path}")
+                        # Could use local file, but sticking with URLs for browser compatibility
+                except Exception as e:
+                    logger.error(f"Error downloading emote {word}: {e}")
+        
+        # Add or update combo
+        config = self.emote_configs.get(word)
+        combo_count, is_new = self.combo_manager.add_or_update_combo(
+            word, 
+            username, 
+            is_emote=is_emote, 
+            emote_id=emote_id, 
+            emote_url=emote_url,
+            config=config
+        )
+        
+        # Add to message queue for processing
+        self.message_queue.put({
+            "word": word,
+            "combo": combo_count,
+            "is_emote": is_emote,
+            "emote_id": emote_id,
+            "emote_url": emote_url,
+            "custom_audio": config.custom_audio if config else None,
+            "username": username
+        })
         
         # Update overlay with active combos
         self.update_overlay()
@@ -604,7 +625,7 @@ class TwitchTracker:
                 
                 # Mark task as done
                 self.message_queue.task_done()
-            except Queue.Empty:
+            except Empty:  # Fixed: Using the proper Empty exception from queue module
                 # No messages, just wait
                 pass
             except Exception as e:
@@ -617,6 +638,8 @@ class TwitchTracker:
             return
         
         buffer = ""
+        self.sock.settimeout(0.1)  # Set a short timeout for more responsive reading
+        
         while self.running:
             try:
                 data = self.sock.recv(2048)
@@ -654,6 +677,9 @@ class TwitchTracker:
                             
                             # Process the message
                             self.process_message(username, message, emote_data)
+            except socket.timeout:
+                # This is expected due to our timeout setting - just continue
+                continue
             except Exception as e:
                 logger.error(f"Error in chat listener: {e}")
                 # Try to reconnect
